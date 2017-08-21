@@ -124,30 +124,47 @@
     });
     
         /* graphic button  Cari Suku */
-    $(document).on("click", ".uib_w_30", function(evt)
+    
+    
+        /* graphic button  Informasi */
+    
+    
+        /* graphic button  Petunjuk */
+    
+    
+        /* graphic button  Tentang Kami */
+    $(document).on("click", ".uib_w_32", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#about"); 
+         return false;
+    });
+    
+        /* graphic button  .uib_w_29 */
+    $(document).on("click", ".uib_w_29", function(evt)
     {
          /*global activate_page */
          activate_page("#suku"); 
          return false;
     });
     
-        /* graphic button  Informasi */
-    $(document).on("click", ".uib_w_31", function(evt)
+        /* graphic button  .uib_w_30 */
+    $(document).on("click", ".uib_w_30", function(evt)
     {
          /*global activate_page */
          activate_page("#info"); 
          return false;
     });
     
-        /* graphic button  Petunjuk */
-    $(document).on("click", ".uib_w_32", function(evt)
+        /* graphic button  .uib_w_31 */
+    $(document).on("click", ".uib_w_31", function(evt)
     {
          /*global activate_page */
          activate_page("#petunjuk"); 
          return false;
     });
     
-        /* graphic button  Tentang Kami */
+        /* graphic button  .uib_w_32 */
     $(document).on("click", ".uib_w_32", function(evt)
     {
          /*global activate_page */
@@ -158,3 +175,30 @@
     }
  document.addEventListener("app.Ready", register_event_handlers, false);
 })();
+
+document.addEventListener("backbutton",function(e){
+        
+         if($("#mainpage").is(":visible")){
+             e.preventDefault();
+             $(".uib_w_5").modal();
+         }
+        
+     },false);
+
+document.addEventListener("backbutton",function(e){
+        
+         if($("#hal1").is(":visible")){
+             e.preventDefault();
+             activate_page("#mainpage");
+         }
+        
+     },false);
+
+document.addEventListener("backbutton",function(e){
+        
+         if($("#info").is(":visible")){
+             e.preventDefault();
+             activate_page("#hal1");
+         }
+        
+     },false);
