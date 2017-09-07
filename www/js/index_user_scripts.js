@@ -141,12 +141,7 @@
     });
     
         /* graphic button  .uib_w_29 */
-    $(document).on("click", ".uib_w_29", function(evt)
-    {
-         /*global activate_page */
-         activate_page("#suku"); 
-         return false;
-    });
+    
     
         /* graphic button  .uib_w_30 */
     $(document).on("click", ".uib_w_30", function(evt)
@@ -169,6 +164,49 @@
     {
          /*global activate_page */
          activate_page("#about"); 
+         return false;
+    });
+    
+        /* graphic button  #klr */
+    $(document).on("click", "#klr", function(evt)
+    {
+         /* Other options: .modal("show")  .modal("hide")  .modal("toggle")
+         See full API here: http://getbootstrap.com/javascript/#modals 
+            */
+        
+         $(".uib_w_5").modal("toggle");  
+         return false;
+    });
+    
+        /* graphic button  #msk */
+    $(document).on("click", "#msk", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#hal1"); 
+         return false;
+    });
+    
+        /* graphic button  #kmp */
+    $(document).on("click", "#kmp", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#Lokasi"); 
+         return false;
+    });
+    
+        /* graphic button  .uib_w_45 */
+    $(document).on("click", ".uib_w_45", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#mainpage"); 
+         return false;
+    });
+    
+        /* graphic button  .uib_w_29 */
+    $(document).on("click", ".uib_w_29", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#data1"); 
          return false;
     });
     
