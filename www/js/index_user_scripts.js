@@ -244,6 +244,37 @@
          return false;
     });
      
+    $(document).on("click", "#list-data5", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#data5"); 
+         return false;
+    });
+    $(document).on("click", "#list-data6", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#data6"); 
+         return false;
+    });    
+    $(document).on("click", "#list-data7", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#data7"); 
+         return false;
+    });  
+    $(document).on("click", "#list-data8", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#data8"); 
+         return false;
+    });    
+    $(document).on("click", "#list-data9", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#data9"); 
+         return false;
+    });
+     
 /* END LIST SEARCH ACTION */
 /* END LIST SEARCH ACTION */
 /* END LIST SEARCH ACTION */
@@ -268,6 +299,46 @@
     
         /* graphic button  .uib_w_57 */
     $(document).on("click", ".uib_w_57", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#hal1"); 
+         return false;
+    });
+    
+        /* graphic button  .uib_w_60 */
+    $(document).on("click", ".uib_w_60", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#hal1"); 
+         return false;
+    });
+    
+        /* graphic button  .uib_w_63 */
+    $(document).on("click", ".uib_w_63", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#hal1"); 
+         return false;
+    });
+    
+        /* graphic button  .uib_w_66 */
+    $(document).on("click", ".uib_w_66", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#hal1"); 
+         return false;
+    });
+    
+        /* graphic button  .uib_w_69 */
+    $(document).on("click", ".uib_w_69", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#hal1"); 
+         return false;
+    });
+    
+        /* graphic button  .uib_w_72 */
+    $(document).on("click", ".uib_w_72", function(evt)
     {
          /*global activate_page */
          activate_page("#hal1"); 
@@ -372,6 +443,46 @@ document.addEventListener("backbutton",function(e){
 document.addEventListener("backbutton",function(e){
         
          if($("#data4").is(":visible")){
+             e.preventDefault();
+             activate_page("#hal1");
+         }
+        
+     },false);
+document.addEventListener("backbutton",function(e){
+        
+         if($("#data5").is(":visible")){
+             e.preventDefault();
+             activate_page("#hal1");
+         }
+        
+     },false);
+document.addEventListener("backbutton",function(e){
+        
+         if($("#data6").is(":visible")){
+             e.preventDefault();
+             activate_page("#hal1");
+         }
+        
+     },false);
+document.addEventListener("backbutton",function(e){
+        
+         if($("#data7").is(":visible")){
+             e.preventDefault();
+             activate_page("#hal1");
+         }
+        
+     },false);
+document.addEventListener("backbutton",function(e){
+        
+         if($("#data8").is(":visible")){
+             e.preventDefault();
+             activate_page("#hal1");
+         }
+        
+     },false);
+document.addEventListener("backbutton",function(e){
+        
+         if($("#data9").is(":visible")){
              e.preventDefault();
              activate_page("#hal1");
          }
