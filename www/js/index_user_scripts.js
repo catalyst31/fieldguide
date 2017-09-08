@@ -123,13 +123,6 @@
          return false;
     });
     
-        /* graphic button  Cari Suku */
-    
-    
-        /* graphic button  Informasi */
-    
-    
-        /* graphic button  Petunjuk */
     
     
         /* graphic button  Tentang Kami */
@@ -203,13 +196,7 @@
     });
     
         /* graphic button  .uib_w_29 */
-    $(document).on("click", ".uib_w_29", function(evt)
-    {
-         /*global activate_page */
-        activate_page("#data1");
-          
-         return false;
-    });
+    
     
         /* graphic button  .uib_w_48 */
     $(document).on("click", ".uib_w_48", function(evt)
@@ -219,9 +206,79 @@
          return false;
     });
     
+        /* graphic button  .uib_w_29 */
+    $(document).on("click", ".uib_w_29", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#suku"); 
+         return false;
+    });
+    
+/* START LIST SEARCH ACTION */
+
+    $(document).on("click", "#list-data1", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#data1"); 
+         return false;
+    });
+     
+    $(document).on("click", "#list-data2", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#data2"); 
+         return false;
+    });
+     
+    $(document).on("click", "#list-data3", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#data3"); 
+         return false;
+    });  
+     
+    $(document).on("click", "#list-data4", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#data4"); 
+         return false;
+    });
+     
+/* END LIST SEARCH ACTION */
+/* END LIST SEARCH ACTION */
+/* END LIST SEARCH ACTION */
+/* END LIST SEARCH ACTION */
+     
+     
+        /* graphic button  .uib_w_51 */
+    $(document).on("click", ".uib_w_51", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#hal1"); 
+         return false;
+    });
+    
+        /* graphic button  .uib_w_54 */
+    $(document).on("click", ".uib_w_54", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#hal1"); 
+         return false;
+    });
+    
+        /* graphic button  .uib_w_57 */
+    $(document).on("click", ".uib_w_57", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#hal1"); 
+         return false;
+    });
+    
     }
  document.addEventListener("app.Ready", register_event_handlers, false);
 })();
+
+/*START BACK BUTTON ACTION ALL PAGE*/
 
 document.addEventListener("backbutton",function(e){
         
@@ -243,6 +300,15 @@ document.addEventListener("backbutton",function(e){
 
 document.addEventListener("backbutton",function(e){
         
+         if($("#kmp").is(":visible")){
+             e.preventDefault();
+             activate_page("#mainpage");
+         }
+        
+     },false);
+
+document.addEventListener("backbutton",function(e){
+        
          if($("#info").is(":visible")){
              e.preventDefault();
              activate_page("#hal1");
@@ -250,4 +316,65 @@ document.addEventListener("backbutton",function(e){
         
      },false);
 
+document.addEventListener("backbutton",function(e){
+        
+         if($("#suku").is(":visible")){
+             e.preventDefault();
+             activate_page("#hal1");
+         }
+        
+     },false);
 
+document.addEventListener("backbutton",function(e){
+        
+         if($("#about").is(":visible")){
+             e.preventDefault();
+             activate_page("#hal1");
+         }
+        
+     },false);
+
+document.addEventListener("backbutton",function(e){
+        
+         if($("#petunjuk").is(":visible")){
+             e.preventDefault();
+             activate_page("#hal1");
+         }
+        
+     },false);
+
+document.addEventListener("backbutton",function(e){
+        
+         if($("#data1").is(":visible")){
+             e.preventDefault();
+             activate_page("#hal1");
+         }
+        
+     },false);
+
+document.addEventListener("backbutton",function(e){
+        
+         if($("#data2").is(":visible")){
+             e.preventDefault();
+             activate_page("#hal1");
+         }
+        
+     },false);
+
+document.addEventListener("backbutton",function(e){
+        
+         if($("#data3").is(":visible")){
+             e.preventDefault();
+             activate_page("#hal1");
+         }
+        
+     },false);
+document.addEventListener("backbutton",function(e){
+        
+         if($("#data4").is(":visible")){
+             e.preventDefault();
+             activate_page("#hal1");
+         }
+        
+     },false);
+/*END BACK BUTTON ACTION ALL PAGE*/

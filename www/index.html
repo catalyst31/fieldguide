@@ -13,19 +13,27 @@
         <title>Aplikasi</title>
         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 
-        <!--
-  * The "meta viewport" tag (below) helps your app size appropriately to a device's ideal viewport.
-  * Note that Windows device viewports work better when initialized using the @viewport CSS rule.
-  * For a quick overview of "meta viewport" and @viewport, see this article:
-  *   http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag
-  * To see how it works, try your app on a real device with and without a "meta viewport" tag.
-  * Additional useful references include:
-  *   http://www.quirksmode.org/mobile/viewports.html
-  *   http://www.quirksmode.org/mobile/metaviewport/devices.html
-  *   https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html
--->
+        <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css">
 
-        <!-- <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1"> -->
+        <style>
+            .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { border-width: 0; }
+                .nav-tabs > li > a { border: none; color: #ffffff;background: #099b2b; }
+                .nav-tabs > li.active > a, .nav-tabs > li > a:hover { border: none;  color: #5a4080 !important; background: #fff; }
+                .nav-tabs > li > a::after { content: ""; background: #5a4080; height: 2px; position: absolute; width: 100%; left: 0px; bottom: -1px; transition: all 250ms ease 0s; transform: scale(0); }
+                .nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after { transform: scale(1); }
+                .tab-nav > li > a::after { background: ##5a4080 none repeat scroll 0% 0%; color: #fff; }
+                .tab-pane { padding: 15px 0; }
+                .asd{
+                height:200px;
+                overflow-y:scroll;
+                width:100%;
+                }
+                .tab-content{padding:20px}
+                .nav-tabs > li  {width:20%; text-align:center;}
+                .card {background: #FFF none repeat scroll 0% 0%; box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3); margin-bottom: 30px; }
+                
+                }
+        </style>
         <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
         <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1, maximum-scale=2"> -->
 
@@ -37,7 +45,48 @@
                 @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
                 /*@-ms-viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }   @viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }*/
         </style>
-
+        <style>
+            * {
+              box-sizing: border-box;
+            }
+            
+            #myInput {
+              background-image: url('/css/searchicon.png');
+              background-position: 10px 12px;
+              background-repeat: no-repeat;
+              width: 100%;
+              font-size: 16px;
+              padding: 12px 20px 12px 40px;
+              border: 1px solid #ddd;
+              margin-bottom: 12px;
+            }
+            
+            #myUL {
+              list-style-type: none;
+              padding: 0;
+              margin: 0;
+            }
+            
+            #myUL li a {
+              border: 1px solid #ddd;
+              margin-top: -1px; /* Prevent double borders */
+              background-color: #f6f6f6;
+              padding: 12px;
+              text-decoration: none;
+              font-size: 18px;
+              color: black;
+              display: block
+            }
+            
+            #myUL li a.header {
+              background-color: #e2e2e2;
+              cursor: default;
+            }
+            
+            #myUL li a:hover:not(.header) {
+              background-color: #eee;
+            }
+        </style>
         <link rel="stylesheet" href="css/app.css">
         <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
 
@@ -284,7 +333,66 @@
                     <div class="widget-container content-area horiz-area wrapping-col left"></div>
                     <div class="widget-container content-area horiz-area wrapping-col right"></div>
                 </div>
-                <div class="upage-content ac0 content-area vertical-col left" id="page_78_69"></div>
+                <div class="upage-content ac0 content-area vertical-col left" id="page_78_69">
+                    <center>
+                        <h2>Cari Suku Pohon</h2>
+                    </center>
+                    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Cari Suku . . ." title="Suku Pohon">
+
+                    <ul id="myUL">
+                        <li><a href="#" class="header">A</a>
+                        </li>
+                        <li><a id="list-data1" href="#">Acacia mangium Willd.</a>
+                        </li>
+                        <li><a id="list-data2" href="#">Adenanthera pavonia L.</a>
+                        </li>
+                        <li><a id="list-data3" href="#">Agathis dammara</a>
+                        </li>
+                        <li><a id="list-data4" href="#">Albizia falcata(L.) Backer</a>
+                        </li>
+                        <li><a id="list-data5" href="#">Albizia saman</a>
+                        </li>
+                        <li><a id="list-data6" href="#">Alstonia scholaris (L.) R. Br.</a>
+                        </li>
+                        <li><a id="list-data7" href="#">Anacardium occidentale</a>
+                        </li>
+                        <li><a id="list-data8" href="#">Annona muricata</a>
+                        </li>
+                        <li><a id="list-data9" href="#">Annona reticulata</a>
+                        </li>
+                        <li><a id="list-data10" href="#">Annona squamosa L.</a>
+                        </li>
+                        <li><a id="list-data11" href="#">Antidesma bunius</a>
+                        </li>
+                        <li><a id="list-data12" href="#">Araucaria heterophylla (Salisb.) Franco</a>
+                        </li>
+                        <li><a id="list-data13" href="#">Artocarpus altilis</a>
+                        </li>
+                        <li><a id="list-data14" href="#">Artocarpus heterophyllus Lam.</a>
+                        </li>
+                        <li><a id="list-data15" href="#">Averrhoa carambola L.</a>
+                        </li>
+
+                        <li><a href="#" class="header">B</a>
+                        </li>
+                        <li><a href="#">Billy</a>
+                        </li>
+                        <li><a href="#">Bob</a>
+                        </li>
+
+                        <li><a href="#" class="header">C</a>
+                        </li>
+                        <li><a href="#">Calvin</a>
+                        </li>
+                        <li><a href="#">Christina</a>
+                        </li>
+                        <li><a href="#">Cindy</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <br>
+                    <br>
+                </div>
                 <div class="uib-footer uib-footer-fixed footer-bg container-group inner-element uib_w_18" data-uib="layout/footer" data-ver="0">
                     <h2></h2>
                     <div class="widget-container wrapping-col single-centered"></div>
@@ -298,6 +406,24 @@
                 </div>
             </div>
         </div>
+        <script>
+            function myFunction() {
+                var input, filter, ul, li, a, i;
+                input = document.getElementById("myInput");
+                filter = input.value.toUpperCase();
+                ul = document.getElementById("myUL");
+                li = ul.getElementsByTagName("li");
+                for (i = 0; i < li.length; i++) {
+                    a = li[i].getElementsByTagName("a")[0];
+                    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                        li[i].style.display = "";
+                    } else {
+                        li[i].style.display = "none";
+            
+                    }
+                }
+            }
+        </script>
         <div class="upage hidden main" id="Lokasi">
             <div class="upage-outer">
                 <div class="uib-header header-bg container-group inner-element uib_w_39" data-uib="layout/header" data-ver="0">
@@ -387,31 +513,12 @@
                     <div class="widget-container content-area horiz-area wrapping-col right"></div>
                 </div>
             </div>
-            <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css">
-
-            <style>
-                .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { border-width: 0; }
-                .nav-tabs > li > a { border: none; color: #ffffff;background: #099b2b; }
-                .nav-tabs > li.active > a, .nav-tabs > li > a:hover { border: none;  color: #5a4080 !important; background: #fff; }
-                .nav-tabs > li > a::after { content: ""; background: #5a4080; height: 2px; position: absolute; width: 100%; left: 0px; bottom: -1px; transition: all 250ms ease 0s; transform: scale(0); }
-                .nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after { transform: scale(1); }
-                .tab-nav > li > a::after { background: ##5a4080 none repeat scroll 0% 0%; color: #fff; }
-                .tab-pane { padding: 15px 0; }
-                .asd{
-                height:200px;
-                overflow-y:scroll;
-                width:100%;
-                }
-                .tab-content{padding:20px}
-                .nav-tabs > li  {width:20%; text-align:center;}
-                .card {background: #FFF none repeat scroll 0% 0%; box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3); margin-bottom: 30px; }
-                
-                }
-            </style>
 
             <div class="container">
                 <center>
+                    <h3><b>Akasia mangium // Fabaceae</b> </h3>
                     <img src="img/content/label/label-data1.png" width="40%" height="55%">
+
                 </center>
                 <div class="row">
                     <div class="col-md-12">
@@ -431,12 +538,21 @@
                             <!-- Tab panes -->
                             <div class="tab-content">
                                 <div role="tabpanel" class="tab-pane asd active" id="desc">
-                                    <p style="text-align:justify;"><b>Akar:</b> Tunggang.<br/>
-                                    <b>Batang:</b> bentuk batang bulat, dengan warna batang coklat kemerahan, tidak terdapat getah dan tidak memiliki aroma yang khas permukaan batang berusuk, terdapat banyak lentisel, dan beralur longitudinal,simpodial, arah tumbuh batang tegak lurus (erectus). <br/>
-                                    <b>Daun:</b> Daun majemuk (pinnate), bentuk anak daun lanset sungsang (oblanceolate), tepi anak daun entire (rata), letak posisi anak daun berselang (distichous), ujung anak daun runcing, basal anak daun meruncing, susunan tulang daun menyirip, dengan permukaan anak daun berkerut dan memiliki rambut halus, panjang anak daun 5-20 cm, sifat daging daun seperti kertas (papyraceus).</p>
-                                    <p style="text-align:justify;"><b>Diameter pohon:</b> 28cm. <b>Tinggi pohon:</b>  11m. </p>
+                                    <p style="text-align:justify;">
+                                        <b>Deskripsi</b>
+                                        <br>
+                                        <b>Akar:</b> Tunggang.
+                                        <br>
+                                        <b>Batang:</b> bentuk batang bulat, dengan warna batang coklat kemerahan, tidak terdapat getah dan tidak memiliki aroma yang khas permukaan batang berusuk, terdapat banyak lentisel, dan beralur longitudinal,simpodial,
+                                        arah tumbuh batang tegak lurus (erectus).
+                                        <br>
+                                        <b>Daun:</b> Daun majemuk (pinnate), bentuk anak daun lanset sungsang (oblanceolate), tepi anak daun entire (rata), letak posisi anak daun berselang (distichous), ujung anak daun runcing, basal anak daun meruncing,
+                                        susunan tulang daun menyirip, dengan permukaan anak daun berkerut dan memiliki rambut halus, panjang anak daun 5-20 cm, sifat daging daun seperti kertas (papyraceus).</p>
+                                    <p style="text-align:justify;"><b>Diameter pohon:</b> 28cm. <b>Tinggi pohon:</b> 11m.</p>
                                     <p style="text-align:justify;"><b>Kegunaan :</b> &nbsp; Sering digunakan sebagai tanaman hias, kayu berfungsi sebagai sebuah kayu&nbsp;bakar dan bahan baku pembuatan kertas.</p>
-                                    <p style="text-align:justify;"><b>Ekologi  :</b> &nbsp;Mangium dapat tumbuh pada daerah yang lembab pada tanah alluvial campuran (metamorfic dan granitic) dengan pH 4,8 – 5,2 dan curah hujan yang tinggi mencapai 4.500 mm/tahun dengan temperatur maksimum 31 – 34 &nbsp;o&nbsp;C serta minimum 16 – 12&nbsp;o&nbsp;C, dapat tumbuh pula pada tanah yang miskin unsur hara seperti areal bekas perladangan, tanah bekas jalan traktor, daerah berbatu dan beberapa tempat yang ditumbuhi alang-alang</p>
+                                    <p style="text-align:justify;"><b>Ekologi  :</b> &nbsp;Mangium dapat tumbuh pada daerah yang lembab pada tanah alluvial campuran (metamorfic dan granitic) dengan pH 4,8 – 5,2 dan curah hujan yang tinggi mencapai 4.500 mm/tahun dengan temperatur maksimum
+                                        31 – 34 &nbsp;o&nbsp;C serta minimum 16 – 12&nbsp;o&nbsp;C, dapat tumbuh pula pada tanah yang miskin unsur hara seperti areal bekas perladangan, tanah bekas jalan traktor, daerah berbatu dan beberapa tempat yang
+                                        ditumbuhi alang-alang</p>
                                     <p>
                                         <b>Klasifikasi</b>
                                         <br>Kingdom : Plantae
@@ -453,7 +569,50 @@
                                 </div>
                                 <div role="tabpanel" class="tab-pane" id="profile">Lokasi Kampus A</div>
                                 <div role="tabpanel" class="tab-pane" id="messages">
-                                    Foto 
+                                    <div id="carousel-example" class="carousel slide" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example" data-slide-to="2"></li>
+                                        </ol>
+
+                                        <div class="carousel-inner">
+                                            <div class="item active">
+                                                <a href="#">
+                                                    <img src="http://placekitten.com/1600/600">
+                                                </a>
+                                                <div class="carousel-caption">
+                                                    <h3>Meow</h3>
+                                                    <p>Just Kitten Around</p>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <img src="http://placekitten.com/1600/600">
+                                                </a>
+                                                <div class="carousel-caption">
+                                                    <h3>Meow</h3>
+                                                    <p>Just Kitten Around</p>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <img src="http://placekitten.com/1600/600">
+                                                </a>
+                                                <div class="carousel-caption">
+                                                    <h3>Meow</h3>
+                                                    <p>Just Kitten Around</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left"></span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right"></span>
+                                        </a>
+                                    </div>
                                 </div>
 
                             </div>
@@ -461,9 +620,398 @@
                     </div>
                 </div>
             </div>
-<br/>
-<br/>
+            <br>
+            <br>
 
+        </div>
+        <div class="upage hidden main" id="data2">
+            <div class="upage-outer">
+                <div class="uib-header header-bg container-group inner-element uib_w_49" data-uib="layout/header" data-ver="0">
+                    <h2></h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+                <div class="upage-content ac0 content-area vertical-col left" id="page_50_17"></div>
+                <div class="uib-footer uib-footer-fixed footer-bg container-group inner-element uib_w_50" data-uib="layout/footer" data-ver="0">
+                    <h2></h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left">
+                        <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_51 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                        href="#">
+                            <img src="img/nav/back.png">
+                            <span class="uib-caption"> </span>
+                        </a>
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+            </div>
+
+            <div class="container">
+                <center>
+                    <h3><b>Saga // Fabaceae</b> </h3>
+                    <img src="img/content/label/label-data1.png" width="40%" height="55%">
+                </center>
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Nav tabs -->
+                        <div class="card">
+                            <ul class="nav nav-tabs" role="tablist">
+
+                                <li role="presentation" class="active"><a href="#desc2" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-info"></i>&nbsp; <span>Deskripsi</span></a>
+                                </li>
+                                <li role="presentation"><a href="#profile2" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-map-marker"></i>&nbsp; <span>Lokasi</span></a>
+                                </li>
+                                <li role="presentation"><a href="#messages2" aria-controls="messages" role="tab" data-toggle="tab"><i class="fa fa-photo"></i>&nbsp; <span>Foto</span></a>
+                                </li>
+
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane asd active" id="desc2">
+                                    <p style="text-align:justify;">
+                                        <b>Deskripsi</b>
+                                        <br>
+                                        <b>Akar:</b> Tunggang.
+                                        <br>
+                                        <b>Batang:</b> bentuk bulat, warna hitam keputih-putihan, batang muda bewarna uangu, permukaan batang licin dan halus, tidak memiliki getah dan tidak beraroma khas, percabangan monopodial.
+                                        <br>
+                                        <b>Daun:</b> bentuk daun ovate, tepi daun rata (entire), daun majemuk beranak daun dua, posisi anak daun alternate (berseling), ujung daun tumpul, basal daun tumpul, susunan tulang daun menyirip, tangaki daun silindris.
+                                        <br>
+                                        <b>Buah:</b> buah polong dengan berisi biji-biji bewarna merah dengan titik hitam mengkilat dan licin permukaannya.</p>
+                                    <p style="text-align:justify;"><b>Diameter pohon:</b> 30cm. <b>Tinggi pohon:</b> 12m.</p>
+                                    <p style="text-align:justify;"><b>Kegunaan :</b>Daun saga mempunyai kandungan glycyrrhicic acid yang memiliki sifat menyejukkan kulit dan selaput lendir pada tenggorokkan, daun dan akar saga mempunyai vitamin A, B1, B6, C, Kalsium oksalat, Glisirin,
+                                        batang dan biji mengandung saponin dan plavonoid.</p>
+                                    <p style="text-align:justify;"><b>Ekologi  :</b> banyak tumbuh secara liar di hutan-hutan, ladang-ladang, atau sengaja ditanam dipekarangan. Tumbuh dengan baik di daerah datran rendah hingga ketinggian 1000 m diatas permukaan air laut .
+                                    </p>
+                                    <p>
+                                        <b>Klasifikasi</b>
+                                        <br>Kingdom : Plantae
+                                        <br>Divisi : Magnoliophyta
+                                        <br>Kelas : Equisetopsida
+                                        <br>Ordo : Fabales
+                                        <br>Famili :&nbsp;Fabaceae
+                                        <br>Genus :Adenanthera
+                                        <br>Spesies : Adenanthera pavonia L.
+                                        <br>
+                                        <br>
+                                        <br>(sumber: tropicos.com)
+                                    </p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="profile2">Lokasi Kampus A Dan B</div>
+                                <div role="tabpanel" class="tab-pane" id="messages2">
+                                    <div id="carousel-example2" class="carousel slide" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example2" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example2" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example2" data-slide-to="2"></li>
+                                        </ol>
+
+                                        <div class="carousel-inner">
+                                            <div class="item active">
+                                                <a href="#">
+                                                    <img src="http://placekitten.com/1600/600">
+                                                </a>
+                                                <div class="carousel-caption">
+                                                    <h3>Meow</h3>
+                                                    <p>Just Kitten Around</p>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <img src="http://placekitten.com/1600/600">
+                                                </a>
+                                                <div class="carousel-caption">
+                                                    <h3>Meow</h3>
+                                                    <p>Just Kitten Around</p>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <img src="http://placekitten.com/1600/600">
+                                                </a>
+                                                <div class="carousel-caption">
+                                                    <h3>Meow</h3>
+                                                    <p>Just Kitten Around</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <a class="left carousel-control" href="#carousel-example2" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left"></span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example2" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right"></span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+        <div class="upage hidden main" id="data3">
+            <div class="upage-outer">
+                <div class="uib-header header-bg container-group inner-element uib_w_52" data-uib="layout/header" data-ver="0">
+                    <h2></h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+                <div class="upage-content ac0 content-area vertical-col left" id="page_84_11"></div>
+                <div class="uib-footer uib-footer-fixed footer-bg container-group inner-element uib_w_53" data-uib="layout/footer" data-ver="0">
+                    <h2></h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left">
+                        <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_54 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                        href="#">
+                            <img src="img/nav/back.png">
+                            <span class="uib-caption"> </span>
+                        </a>
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+            </div>
+
+            <div class="container">
+                <center>
+                    <h3><b>Damar  // Araucariaceae</b></h3>
+                    <img src="img/content/label/label-data1.png" width="40%" height="55%">
+                </center>
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Nav tabs -->
+                        <div class="card">
+                            <ul class="nav nav-tabs" role="tablist">
+
+                                <li role="presentation" class="active"><a href="#desc3" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-info"></i>&nbsp; <span>Deskripsi</span></a>
+                                </li>
+                                <li role="presentation"><a href="#profile3" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-map-marker"></i>&nbsp; <span>Lokasi</span></a>
+                                </li>
+                                <li role="presentation"><a href="#messages3" aria-controls="messages" role="tab" data-toggle="tab"><i class="fa fa-photo"></i>&nbsp; <span>Foto</span></a>
+                                </li>
+
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane asd active" id="desc3">
+                                    <p style="text-align:justify;">
+                                        <b>Deskripsi</b>
+                                        <br>
+                                        <b>Akar:</b> Tunggang warna akar coklat tua.
+                                        <br>
+                                        <b>Batang:</b> bentuk batang bulat, dengan warna batang abu-abu muda, permukaan batang berusuk, terdapat resin namun tidak memiliki aroma khas, arah tumbuh batang tumbuh tegak lurus keatas, batang mudah mengelupas.
+                                        <br>
+                                        <b>Daun:</b> tunggal (simple), dengan bentuk daun bundar telur sungsang (obovate), tepi anak daun rata (entire), letak posisi daun distichous, ujung daun runcing, pangkal daun tumpul, susunan tulang daun menyirip
+                                        dengan permukaan daun licin mengkilap; daun aromatik.</p>
+                                    <p style="text-align:justify;"><b>Diameter pohon:</b> 26cm. <b>Tinggi pohon:</b> 9m.</p>
+                                    <p style="text-align:justify;"><b>Kegunaan :</b> Manfaat utama damar adalah diambil getahnya untuk dioleh menjadi kopal (manila copal). Kopal ini mengandung asam-asam resinol, resin, dan minyak atsiri. Kopal merupakan bahan dasar bagi cairan pelapis
+                                        kertas supaya tinta tidak menyebar. Selain itu kopal dimanfaatkan untuk campuran lak dan vernis, perekat pada penambal gigi, dan perekat plester. Pohon damar juga bisa dijadikan pohon penghijauan dan peneduh. Sedangkan
+                                        kayunya, meskipun kurrang kuat dan awet, kerap diperdagangkan sebagai bahan bangunan dengan nama ‘kayu agatis’.</p>
+                                    <p style="text-align:justify;"><b>Ekologi  :</b> Damar dapat tumbuh pada tempat dengan ketinggian diatas 400 dpal. Kondisi tanah yang dibutuhkan relatif subur dengan curah hujan rata-rata 3000-4000 mm per tahun. Pohon ini tidak tahan dengan musim
+                                        panas, jadi hanya tumbuh di tempat yang banyak hujannya seperti di daerah tropis.
+                                    </p>
+                                    <p>
+                                        <b>Klasifikasi</b>
+                                        <br>Kingdom : Plantae
+                                        <br>Divisi : Magnoliophyta
+                                        <br>Kelas : Equisetopsida
+                                        <br>Ordo : Araucariales
+                                        <br>Famili :Araucariaceae
+                                        <br>Genus :Agathis
+                                        <br>Spesies : Agathis dammara (Lamb.) Rich. &amp; A. Rich.
+                                        <br>
+                                        <br>
+                                        <br>(sumber: tropicos.com)
+                                    </p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="profile3">Lokasi Kampus A</div>
+                                <div role="tabpanel" class="tab-pane" id="messages3">
+                                    <div id="carousel-example3" class="carousel slide" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example3" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example3" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example3" data-slide-to="2"></li>
+                                        </ol>
+
+                                        <div class="carousel-inner">
+                                            <div class="item active">
+                                                <a href="#">
+                                                    <img src="http://placekitten.com/1600/600">
+                                                </a>
+                                                <div class="carousel-caption">
+                                                    <h3>Meow</h3>
+                                                    <p>Just Kitten Around</p>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <img src="http://placekitten.com/1600/600">
+                                                </a>
+                                                <div class="carousel-caption">
+                                                    <h3>Meow</h3>
+                                                    <p>Just Kitten Around</p>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <img src="http://placekitten.com/1600/600">
+                                                </a>
+                                                <div class="carousel-caption">
+                                                    <h3>Meow</h3>
+                                                    <p>Just Kitten Around</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <a class="left carousel-control" href="#carousel-example3" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left"></span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example3" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right"></span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+        <div class="upage hidden main" id="data4">
+            <div class="upage-outer">
+                <div class="uib-header header-bg container-group inner-element uib_w_55" data-uib="layout/header" data-ver="0">
+                    <h2></h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+                <div class="upage-content ac0 content-area vertical-col left"></div>
+                <div class="uib-footer uib-footer-fixed footer-bg container-group inner-element uib_w_56" data-uib="layout/footer" data-ver="0">
+                    <h2></h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left">
+                        <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_57 d-margins media-button-text-bottom" data-uib="media/graphic_button"
+                        data-ver="0" href="#">
+                            <img src="img/nav/back.png">
+                            <span class="uib-caption"> </span>
+                        </a>
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+            </div>
+                        <div class="container">
+                <center>
+                    <h3><b>Damar  // Araucariaceae</b></h3>
+                    <img src="img/content/label/label-data1.png" width="40%" height="55%">
+                </center>
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Nav tabs -->
+                        <div class="card">
+                            <ul class="nav nav-tabs" role="tablist">
+
+                                <li role="presentation" class="active"><a href="#desc4" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-info"></i>&nbsp; <span>Deskripsi</span></a>
+                                </li>
+                                <li role="presentation"><a href="#profile4" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-map-marker"></i>&nbsp; <span>Lokasi</span></a>
+                                </li>
+                                <li role="presentation"><a href="#messages4" aria-controls="messages" role="tab" data-toggle="tab"><i class="fa fa-photo"></i>&nbsp; <span>Foto</span></a>
+                                </li>
+
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane asd active" id="desc4">
+                                    <p style="text-align:justify;">
+                                        <b>Deskripsi</b><br/>
+                                        <b>Akar:</b> Tunggang.
+                                        <br>
+                                        <b>Batang:</b> bentuk batang bulat, dengan warna batang coklat tua, permukaan batang berusuk dan terdapat banyak lentisel, batang tidak terdapat getah dan tidak memiliki aroma/ rasa yang khas, batang tumbuh tegak lurus.
+                                        <br>
+                                        <b>Daun:</b> Majemuk menyirip ganda, bentuk anak daun oval, tepi daun entire (rata), letak posisi anak daun berhadapan pada bukunya bersilang (opposite), ujung daun runcing, basal daun tumpul, permukaan daun berbulu halus.</p>
+                                        <b>Bunga:</b> bunganya bunga bangkol atau membulat (eappitullum); Buah: Buah berbentuk polong, pipih, lurus dan tidak bersekat-sekat, buah muda berwarna hijau, berubah kuning sampai coklat setelah masak.
+
+                                    <p style="text-align:justify;"><b>Diameter pohon:</b> 30cm. <b>Tinggi pohon:</b> 17m.</p>
+                                    <p style="text-align:justify;"><b>Kegunaan :</b> Merupakan kayu serba guna untuk konstruksi ringan,
+kerajinan tangan, kotak cerutu, veneer, kayu lapis, korek api, alat musik, pulp. Daun sebagai pakan ayam dan kambing. Di Ambon kulit batang
+digunakan untuk penyamak jaring, kadang-kadang sebagai pengganti sabun. Ditanam sebagai pohon pelindung, tanaman hias, reboisasi dan
+penghijauan.</p>
+                                    <p style="text-align:justify;"><b>Ekologi  :</b> Merupakan species pionir, terutama terdapat di hutan hujan dataran rendah sekunder atau hutan pegunungan rendah. Tumbuh mulai pantai sampai 1600 mdpl, optimum 0-800 mdpl. Dapat beradaptasi dengan iklim monsoon dan lembab dengan curah hujan 200-2700 mm/th dengan bulan kering sampai 4 bulan.
+</p>
+                                    <p>
+                                        <b>Klasifikasi</b>
+                                        <br>Kingdom : Plantae
+                                        <br>Divisi : Magnoliophyta
+                                        <br>Kelas : Equisetopsida
+                                        <br>Ordo : Fabales
+                                        <br>Famili :Fabaceae
+                                        <br>Genus :Albizia 
+
+                                        <br>Spesies : Albizia falcata Willd.
+                                        <br>
+                                        <br>
+                                        <br>(sumber: tropicos.com)
+                                    </p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="profile4">Lokasi Kampus A</div>
+                                <div role="tabpanel" class="tab-pane" id="messages4">
+                                    <div id="carousel-example4" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example4" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example4" data-slide-to="1"></li>
+    <li data-target="#carousel-example4" data-slide-to="2"></li>
+  </ol>
+
+  <div class="carousel-inner">
+    <div class="item active">
+      <a href="#"><img src="http://placekitten.com/1600/600" /></a>
+      <div class="carousel-caption">
+        <h3>Meow</h3>
+        <p>Just Kitten Around</p>
+      </div>
+    </div>
+    <div class="item">
+      <a href="#"><img src="http://placekitten.com/1600/600" /></a>
+      <div class="carousel-caption">
+        <h3>Meow</h3>
+        <p>Just Kitten Around</p>
+      </div>
+    </div>
+    <div class="item">
+      <a href="#"><img src="http://placekitten.com/1600/600" /></a>
+      <div class="carousel-caption">
+        <h3>Meow</h3>
+        <p>Just Kitten Around</p>
+      </div>
+    </div>
+  </div>
+
+  <a class="left carousel-control" href="#carousel-example4" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example4" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
         </div>
     </body>
 
