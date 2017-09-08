@@ -206,7 +206,16 @@
     $(document).on("click", ".uib_w_29", function(evt)
     {
          /*global activate_page */
-         activate_page("#data1"); 
+        activate_page("#data1");
+          
+         return false;
+    });
+    
+        /* graphic button  .uib_w_48 */
+    $(document).on("click", ".uib_w_48", function(evt)
+    {
+         /*global activate_page */ 
+        activate_page("#hal1");
          return false;
     });
     
@@ -240,3 +249,5 @@ document.addEventListener("backbutton",function(e){
          }
         
      },false);
+
+
