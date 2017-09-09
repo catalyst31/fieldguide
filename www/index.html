@@ -90,21 +90,6 @@
         <link rel="stylesheet" href="css/app.css">
         <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
 
-        <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
-        <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work below -->
-        <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
-
-        <!-- Recommended location for your JavaScript libraries -->
-        <!-- These library references (below) are just examples to give you the general idea... -->
-        <!-- <script src="lib/mc/hammer.js"></script> -->
-        <!-- <script src="lib/ft/fastclick.js"></script> -->
-
-        <!--
-  * cordova.js is a phantom lib for "Cordova HTML5 web app," it does nothing in a "Standard HTML5 web app"
-  * Seeing a "Failed to load resource: net::ERR_FILE_NOT_FOUND" message caused by this "cordova.js" script?
-  * The cordova.js script is required if you convert your "Standard HTML5" project into a "Cordova" project.
-  * You can safely ignore the error or comment out this line if you will not be developing a Cordova app.
--->
         <script src="cordova.js" id="xdkJScordova_"></script>
 
         <script src="js/app.js"></script>
@@ -119,12 +104,10 @@
         <script type="application/javascript" src="bootstrap/js/bootstrap.min.js"></script>
         <script type="application/javascript" src="xdk/ad/bs_subpage.js"></script>
         <script type="application/javascript" src="xdk/appdesigner/js/rest-of-space.js"></script>
+
     </head>
 
     <body>
-        <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
-        <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work above -->
-        <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
         <div class="upage main" id="mainpage">
             <div class="upage-outer">
                 <div class="uib-header header-bg container-group inner-element uib_w_1" data-uib="layout/header" data-ver="0">
@@ -450,6 +433,7 @@
                                 <div class="panel-body">
                                     <div class="col uib_col_3 single-col" data-uib="layout/col" data-ver="0">
                                         <div class="widget-container content-area vertical-col">
+                                            <iframe src="kampusA.html" width="600px" height="420px"></iframe>
                                             <span class="uib_shim"></span>
                                         </div>
                                     </div>
@@ -468,6 +452,7 @@
                                 <div class="panel-body">
                                     <div class="col uib_col_4 single-col" data-uib="layout/col" data-ver="0">
                                         <div class="widget-container content-area vertical-col">
+                                            <iframe src="kampusB.html" width="600px" height="420px"></iframe>
                                             <span class="uib_shim"></span>
                                         </div>
                                     </div>
@@ -586,7 +571,10 @@
                                         <br>(sumber: tropicos.com)
                                     </p>
                                 </div>
-                                <div role="tabpanel" class="tab-pane" id="profile">Lokasi Kampus A</div>
+                                <div role="tabpanel" class="tab-pane" id="profile">Lokasi Kampus A
+                                    <br>
+                                    <iframe src="kampusA.html" width="690px" height="420px"></iframe>
+                                </div>
                                 <div role="tabpanel" class="tab-pane" id="messages">
                                     <div id="carousel-example" class="carousel slide" data-ride="carousel">
                                         <ol class="carousel-indicators">
@@ -736,7 +724,10 @@
                                         <br>(sumber: tropicos.com)
                                     </p>
                                 </div>
-                                <div role="tabpanel" class="tab-pane" id="profile2">Lokasi Kampus A Dan B</div>
+                                <div role="tabpanel" class="tab-pane" id="profile2">Lokasi Kampus A Dan B
+                                    <br>
+                                    <iframe src="kampusAB.html" width="690px" height="420px"></iframe>
+                                </div>
                                 <div role="tabpanel" class="tab-pane" id="messages2">
                                     <div id="carousel-example2" class="carousel slide" data-ride="carousel">
                                         <ol class="carousel-indicators">
@@ -884,7 +875,10 @@
                                         <br>(sumber: tropicos.com)
                                     </p>
                                 </div>
-                                <div role="tabpanel" class="tab-pane" id="profile3">Lokasi Kampus A</div>
+                                <div role="tabpanel" class="tab-pane" id="profile3">Lokasi Kampus A
+                                    <br>
+                                    <iframe src="kampusA.html" width="690px" height="420px"></iframe>
+                                </div>
                                 <div role="tabpanel" class="tab-pane" id="messages3">
                                     <div id="carousel-example3" class="carousel slide" data-ride="carousel">
                                         <ol class="carousel-indicators">
@@ -1034,7 +1028,10 @@
                                         <br>(sumber: tropicos.com)
                                     </p>
                                 </div>
-                                <div role="tabpanel" class="tab-pane" id="profile4">Lokasi Kampus A</div>
+                                <div role="tabpanel" class="tab-pane" id="profile4">Lokasi Kampus A
+                                    <br>
+                                    <iframe src="kampusA.html" width="690px" height="420px"></iframe>
+                                </div>
                                 <div role="tabpanel" class="tab-pane" id="messages4">
                                     <div id="carousel-example4" class="carousel slide" data-ride="carousel">
                                         <ol class="carousel-indicators">
@@ -1180,7 +1177,10 @@
                                         <br>(sumber: tropicos.com)
                                     </p>
                                 </div>
-                                <div role="tabpanel" class="tab-pane" id="profile5">Lokasi Kampus A &amp; B</div>
+                                <div role="tabpanel" class="tab-pane" id="profile5">Lokasi Kampus A &amp; B
+                                    <br>
+                                    <iframe src="kampusAB.html" width="690px" height="420px"></iframe>
+                                </div>
                                 <div role="tabpanel" class="tab-pane" id="messages5">
                                     <div id="carousel-example5" class="carousel slide" data-ride="carousel">
                                         <ol class="carousel-indicators">
@@ -1319,7 +1319,10 @@
                                         <br>(sumber: tropicos.com)
                                     </p>
                                 </div>
-                                <div role="tabpanel" class="tab-pane" id="profile6">Lokasi Kampus A</div>
+                                <div role="tabpanel" class="tab-pane" id="profile6">Lokasi Kampus A
+                                    <br>
+                                    <iframe src="kampusA.html" width="690px" height="420px"></iframe>
+                                </div>
                                 <div role="tabpanel" class="tab-pane" id="messages6">
                                     <div id="carousel-example6" class="carousel slide" data-ride="carousel">
                                         <ol class="carousel-indicators">
@@ -1467,7 +1470,10 @@
                                         <br>(sumber: tropicos.com)
                                     </p>
                                 </div>
-                                <div role="tabpanel" class="tab-pane" id="profile7">Lokasi Kampus A</div>
+                                <div role="tabpanel" class="tab-pane" id="profile7">Lokasi Kampus A
+                                    <br>
+                                    <iframe src="kampusA.html" width="690px" height="420px"></iframe>
+                                </div>
                                 <div role="tabpanel" class="tab-pane" id="messages7">
                                     <div id="carousel-example7" class="carousel slide" data-ride="carousel">
                                         <ol class="carousel-indicators">
@@ -1620,7 +1626,10 @@
                                         <br>(sumber: tropicos.com)
                                     </p>
                                 </div>
-                                <div role="tabpanel" class="tab-pane" id="profile8">Lokasi Kampus A</div>
+                                <div role="tabpanel" class="tab-pane" id="profile8">Lokasi Kampus A
+                                    <br>
+                                    <iframe src="kampusA.html" width="690px" height="420px"></iframe>
+                                </div>
                                 <div role="tabpanel" class="tab-pane" id="messages8">
                                     <div id="carousel-example8" class="carousel slide" data-ride="carousel">
                                         <ol class="carousel-indicators">
@@ -1684,13 +1693,13 @@
                     <div class="widget-container content-area horiz-area wrapping-col left"></div>
                     <div class="widget-container content-area horiz-area wrapping-col right"></div>
                 </div>
-                <div class="upage-content ac0 content-area vertical-col left"></div>
+                <div class="upage-content ac0 content-area vertical-col left" id="page_94_67"></div>
                 <div class="uib-footer uib-footer-fixed footer-bg container-group inner-element uib_w_71" data-uib="layout/footer" data-ver="0">
                     <h2></h2>
                     <div class="widget-container wrapping-col single-centered"></div>
                     <div class="widget-container content-area horiz-area wrapping-col left">
-                        <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_72 d-margins media-button-text-bottom" data-uib="media/graphic_button"
-                        data-ver="0" href="#">
+                        <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_72 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                        href="#">
                             <img src="img/nav/back.png">
                             <span class="uib-caption"> </span>
                         </a>
@@ -1698,9 +1707,9 @@
                     <div class="widget-container content-area horiz-area wrapping-col right"></div>
                 </div>
             </div>
-                                    <div class="container">
+            <div class="container">
                 <center>
-                    <h3><b>buah nona, mulwa  //  Annonaceae</b></h3>
+                    <h3><b>buah nona, mulwa &nbsp;//  Annonaceae</b></h3>
                     <img src="img/content/label/label-data9.png" width="40%" height="55%">
                 </center>
                 <div class="row">
@@ -1723,53 +1732,44 @@
                                 <div role="tabpanel" class="tab-pane asd active" id="desc9">
                                     <p style="text-align:justify;">
                                         <b>Akar :</b>
-                                        <br>
-                                        Tunggang.
+                                        <br>Tunggang.
                                     </p>
                                     <p style="text-align:justify;">
                                         <b>Batang :</b>
-                                        <br>
-                                        Bentuk atang bulat, dengan warna batang coklat keabu-abuan, permukaan batang beralur, tidak terdapat getah dan memiliki aroma khas.
+                                        <br>Bentuk batang bulat, dengan warna batang coklat keabu-abuan, permukaan batang beralur, tidak terdapat getah dan memiliki aroma khas.
                                     </p>
                                     <p style="text-align:justify;">
                                         <b>Daun :</b>
-                                        <br>
-                                        Tunggal (simple), dengan bentuk daun bundar telur sungsang (obovate), tepi daun rata (entire) namun bergelombang, letak posisi daun alternate,  ujung daun tumpul, pangkal daun tumpul hingga membulat, susunan tulang daun menyirip dengan permukaan daun berbulu halus,  apabila daun diremas memiliki aroma yang kuat.
+                                        <br>Tunggal (simple), dengan bentuk daun bundar telur sungsang (obovate), tepi daun rata (entire) namun bergelombang, letak posisi daun alternate, ujung daun tumpul, pangkal daun tumpul hingga membulat, susunan tulang
+                                        daun menyirip dengan permukaan daun berbulu halus, apabila daun diremas memiliki aroma yang kuat.
                                     </p>
 
                                     <p style="text-align:justify;">
                                         <b>Bunga :</b>
-                                        <br>
-                                        Tangkai ± 12 mm, daun kelopak kecil, bulat telur, panjang ± 4½ cm, benang sari banyak, putih, tangkai sari melebar, kepala putik duduk, mahkota lanset, panjang ± 31 mm, lebar ± 6 mm, kuning keputih-putihan. 
+                                        <br>Tangkai ± 12 mm, daun kelopak kecil, bulat telur, panjang ± 4½ cm, benang sari banyak, putih, tangkai sari melebar, kepala putik duduk, mahkota lanset, panjang ± 31 mm, lebar ± 6 mm, kuning keputih-putihan.
                                     </p>
                                     <p style="text-align:justify;">
                                         <b>Buah :</b>
-                                        <br>
-                                        Buah mirip buah srikaya namun tidak berduri dan lekuk-lekuknya tidak terlalu tajam buah majemuk agregat, bulat, diameter 5 – 12 cm, kuning atau merah kekuningan.
+                                        <br>Buah mirip buah srikaya namun tidak berduri dan lekuk-lekuknya tidak terlalu tajam buah majemuk agregat, bulat, diameter 5 – 12 cm, kuning atau merah kekuningan.
 
                                     </p>
                                     <p style="text-align:justify;">
                                         <b>Diameter pohon :</b>
-                                        <br>
-                                        34cm.
+                                        <br>34cm.
                                     </p>
                                     <p style="text-align:justify;">
                                         <b>Tinggi pohon :</b>
-                                        <br>
-                                        12m.
+                                        <br>12m.
                                     </p>
                                     <p style="text-align:justify;">
                                         <b>Kegunaan :</b>
-                                        <br>
-                                        Daun Annona reticulata berkhasiat sebagai obat bisul, obat encok, dan obat sakit kulit, biji dan kulit batangnya berkhasiat sebagai obat mencret.
-                                        <br>
-                                        Obat bisul : dipakai 4 – 5 lembar daun segar Annona reticulata, dicuci, diberi kapur ¼ sendok teh, ditumbuk sampai lumat, kemudian ditempelkan pada bisul, dibalut dengan kain bersih.
+                                        <br>Daun&nbsp;Annona reticulata&nbsp;berkhasiat sebagai obat bisul, obat encok, dan obat sakit kulit, biji dan kulit batangnya berkhasiat sebagai obat mencret.
+                                        <br>Obat bisul&nbsp;: dipakai 4 – 5 lembar daun segar&nbsp;Annona reticulata, dicuci, diberi kapur ¼ sendok teh, ditumbuk sampai lumat, kemudian ditempelkan pada bisul, dibalut dengan kain bersih.
 
                                     </p>
                                     <p style="text-align:justify;">
                                         <b>Ekologi  :</b>
-                                        <br>
-                                        Hidup di daerah tropis
+                                        <br>Hidup di daerah tropis
 
                                     </p>
                                     <p style="text-align:justify;">
@@ -1780,52 +1780,61 @@
                                         <br>Ordo : Magnoliales
                                         <br>Famili : Annonaceae
                                         <br>Genus : Annona
-                                        <br>Spesies : Annona reticulata L.   
+                                        <br>Spesies : Annona reticulata&nbsp;L.
                                         <br>
                                         <br>
                                         <br>(sumber: tropicos.com)
                                     </p>
                                 </div>
-                                <div role="tabpanel" class="tab-pane" id="profile9">Lokasi Kampus A</div>
+                                <div role="tabpanel" class="tab-pane" id="profile9">Lokasi Kampus A
+                                    <br>
+                                    <iframe src="kampusA.html" width="690px" height="420px"></iframe>
+                                </div>
                                 <div role="tabpanel" class="tab-pane" id="messages9">
                                     <div id="carousel-example9" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example9" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example9" data-slide-to="1"></li>
-    <li data-target="#carousel-example9" data-slide-to="2"></li>
-  </ol>
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example9" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example9" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example9" data-slide-to="2"></li>
+                                        </ol>
 
-  <div class="carousel-inner">
-    <div class="item active">
-      <a href="#"><img src="http://placekitten.com/1600/600" /></a>
-      <div class="carousel-caption">
-        <h3>Meow</h3>
-        <p>Just Kitten Around</p>
-      </div>
-    </div>
-    <div class="item">
-      <a href="#"><img src="http://placekitten.com/1600/600" /></a>
-      <div class="carousel-caption">
-        <h3>Meow</h3>
-        <p>Just Kitten Around</p>
-      </div>
-    </div>
-    <div class="item">
-      <a href="#"><img src="http://placekitten.com/1600/600" /></a>
-      <div class="carousel-caption">
-        <h3>Meow</h3>
-        <p>Just Kitten Around</p>
-      </div>
-    </div>
-  </div>
+                                        <div class="carousel-inner">
+                                            <div class="item active">
+                                                <a href="#">
+                                                    <img src="http://placekitten.com/1600/600">
+                                                </a>
+                                                <div class="carousel-caption">
+                                                    <h3>Meow</h3>
+                                                    <p>Just Kitten Around</p>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <img src="http://placekitten.com/1600/600">
+                                                </a>
+                                                <div class="carousel-caption">
+                                                    <h3>Meow</h3>
+                                                    <p>Just Kitten Around</p>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <img src="http://placekitten.com/1600/600">
+                                                </a>
+                                                <div class="carousel-caption">
+                                                    <h3>Meow</h3>
+                                                    <p>Just Kitten Around</p>
+                                                </div>
+                                            </div>
+                                        </div>
 
-  <a class="left carousel-control" href="#carousel-example9" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example9" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
-</div>
+                                        <a class="left carousel-control" href="#carousel-example9" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left"></span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example9" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right"></span>
+                                        </a>
+                                    </div>
                                 </div>
 
                             </div>
@@ -1835,6 +1844,676 @@
             </div>
             <br>
             <br>
+        </div>
+        <div class="upage hidden main" id="data10">
+            <div class="upage-outer">
+                <div class="uib-header header-bg container-group inner-element uib_w_73" data-uib="layout/header" data-ver="0">
+                    <h2></h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+                <div class="upage-content ac0 content-area vertical-col left" id="page_81_55"></div>
+                <div class="uib-footer uib-footer-fixed footer-bg container-group inner-element uib_w_74" data-uib="layout/footer" data-ver="0">
+                    <h2></h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left">
+                        <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_75 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                        href="#">
+                            <img src="img/nav/back.png">
+                            <span class="uib-caption"> </span>
+                        </a>
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+            </div>
+            <div class="container">
+                <center>
+                    <h3><b>Srikaya, sarikaya // Annonaceae</b></h3>
+                    <img src="img/content/label/label-data10.png" width="40%" height="55%">
+                </center>
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Nav tabs -->
+                        <div class="card">
+                            <ul class="nav nav-tabs" role="tablist">
+
+                                <li role="presentation" class="active"><a href="#desc10" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-info"></i>&nbsp; <span>Deskripsi</span></a>
+                                </li>
+                                <li role="presentation"><a href="#profile10" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-map-marker"></i>&nbsp; <span>Lokasi</span></a>
+                                </li>
+                                <li role="presentation"><a href="#messages10" aria-controls="messages" role="tab" data-toggle="tab"><i class="fa fa-photo"></i>&nbsp; <span>Foto</span></a>
+                                </li>
+
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane asd active" id="desc10">
+                                    <p style="text-align:justify;">
+                                        <b>Akar :</b>
+                                        <br>Tunggang.
+                                    </p>
+                                    <p style="text-align:justify;">
+                                        <b>Batang :</b>
+                                        <br>Bentuk bulat, warna coklat keabu-abuan, permukaan banyak lentisel, memiliki getah, beraroma khas srikaya, bagian dalam warna kuning.
+                                    </p>
+                                    <p style="text-align:justify;">
+                                        <b>Daun :</b>
+                                        <br>bentuk daun oblanceolate, tepi daun rata (entire), daun tunggal, posisi daun alternate, ujung daun runcing, basal daun tumpul, susunan tulang daun menyirip, permukaan daun berbulu halus, rasa daun pahit.
+                                    </p>
+
+                                    <p style="text-align:justify;">
+                                        <b>Buah :</b>
+                                        <br>halus dan setiap sisik merupakan karpel yang berisi satu butir biji. Buah srikaya yang &nbsp;masih muda berwarna hijau, yang sudah tua berwarna hijau kekuningan, pecah, lembek, dan mengeluarkan aroma harum yang
+                                        khas.
+
+                                    </p>
+                                    <p style="text-align:justify;">
+                                        <b>Diameter pohon :</b>
+                                        <br>25cm.
+                                    </p>
+                                    <p style="text-align:justify;">
+                                        <b>Tinggi pohon :</b>
+                                        <br>7m.
+                                    </p>
+                                    <p style="text-align:justify;">
+                                        <b>Ekologi &amp; Kegunaan :</b>
+                                        <br>Selain sebagai konsumsi buah yang menyehatkan, biji buah Srikaya dapat digunakan sebagai pestisida nabati. Misalnya ekstrak biji Srikaya digunakan untuk mengendalikan serangan hama ulat Spodoptera litura, Plutella
+                                        xylostella, dan Rayap tanah. Ekstrak biji Srikaya berfungsi sebagai racun perut pada serangga hama tersebut.
+                                    </p>
+
+                                    <p style="text-align:justify;">
+                                        <b>Habitat  :</b>
+                                        <br>Hidup di daerah tropis
+
+                                    </p>
+
+                                    <p style="text-align:justify;">
+                                        <b>Klasifikasi</b>
+                                        <br>Kingdom : Plantae
+                                        <br>Divisi : Magnoliophyta
+                                        <br>Kelas : Equisetopsida
+                                        <br>Ordo : Magnoliales
+                                        <br>Famili : Annonaceae
+                                        <br>Genus : Annona
+                                        <br>Spesies : Annona squamosa L.
+                                        <br>
+                                        <br>
+                                        <br>(sumber: tropicos.com)
+                                    </p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="profile10">Lokasi Kampus A &amp; B
+                                    <br>
+                                    <iframe src="kampusAB.html" width="690px" height="420px"></iframe>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="messages10">
+                                    <div id="carousel-example10" class="carousel slide" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example10" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example10" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example10" data-slide-to="2"></li>
+                                        </ol>
+
+                                        <div class="carousel-inner">
+                                            <div class="item active">
+                                                <a href="#">
+                                                    <img src="http://placekitten.com/1600/600">
+                                                </a>
+                                                <div class="carousel-caption">
+                                                    <h3>Meow</h3>
+                                                    <p>Just Kitten Around</p>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <img src="http://placekitten.com/1600/600">
+                                                </a>
+                                                <div class="carousel-caption">
+                                                    <h3>Meow</h3>
+                                                    <p>Just Kitten Around</p>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <img src="http://placekitten.com/1600/600">
+                                                </a>
+                                                <div class="carousel-caption">
+                                                    <h3>Meow</h3>
+                                                    <p>Just Kitten Around</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <a class="left carousel-control" href="#carousel-example10" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left"></span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example10" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right"></span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+        <div class="upage hidden main" id="data11">
+            <div class="upage-outer">
+                <div class="uib-header header-bg container-group inner-element uib_w_76" data-uib="layout/header" data-ver="0">
+                    <h2></h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+                <div class="upage-content ac0 content-area vertical-col left" id="page_9_39"></div>
+                <div class="uib-footer uib-footer-fixed footer-bg container-group inner-element uib_w_77" data-uib="layout/footer" data-ver="0">
+                    <h2></h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left">
+                        <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_78 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                        href="#">
+                            <img src="img/nav/back.png">
+                            <span class="uib-caption"> </span>
+                        </a>
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+            </div>
+
+            <div class="container">
+                <center>
+                    <h3><b>Buni  // Phyllanthaceae  </b></h3>
+                    <img src="img/content/label/label-data11.png" width="40%" height="55%">
+                </center>
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Nav tabs -->
+                        <div class="card">
+                            <ul class="nav nav-tabs" role="tablist">
+
+                                <li role="presentation" class="active"><a href="#desc11" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-info"></i>&nbsp; <span>Deskripsi</span></a>
+                                </li>
+                                <li role="presentation"><a href="#profile11" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-map-marker"></i>&nbsp; <span>Lokasi</span></a>
+                                </li>
+                                <li role="presentation"><a href="#messages11" aria-controls="messages" role="tab" data-toggle="tab"><i class="fa fa-photo"></i>&nbsp; <span>Foto</span></a>
+                                </li>
+
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane asd active" id="desc11">
+                                    <p style="text-align:justify;">
+                                        <b>Akar :</b>
+                                        <br>Tunggang.
+                                    </p>
+                                    <p style="text-align:justify;">
+                                        <b>Batang :</b>
+                                        <br>Bentuk batang bulat, dengan warna batang coklat muda, permukaan batang berusuk dan banyak terdapat lentisel, tidak terdapat getah dan tidak memiliki aroma yang khas.
+                                    </p>
+                                    <p style="text-align:justify;">
+                                        <b>Daun :</b>
+                                        <br>Merupakan daun tunggal (simple), bentuk daun ovale sampai lanset (lanceolate), tepi daun rata (entire) agak bergelombang, letak posisi daun berseling (distichous), ujung daun tumpul, basal daun tumpul, susunan tulang
+                                        daun menyirip, permukaan daun licin mengkilap.
+                                    </p>
+
+                                    <p style="text-align:justify;">
+                                        <b>Buah :</b>
+                                        <br>Buahnya kecil-kecil panjang sekitar 1 cm, bentuknya elips berwarna hijau, biia masak menjadi ungu kehitaman dan rasanya manis sedikit asam.
+
+                                    </p>
+                                    <p style="text-align:justify;">
+                                        <b>Diameter pohon :</b>
+                                        <br>35cm.
+                                    </p>
+                                    <p style="text-align:justify;">
+                                        <b>Tinggi pohon :</b>
+                                        <br>14m.
+                                    </p>
+                                    <p style="text-align:justify;">
+                                        <b>Kegunaan :</b>
+                                        <br>Bagian buni yang bermanfaat yaitu daunnya, ranting dan buah. Kegunaan dari buni yaitu untuk menurunkan tekanan darah tinggi, daun mudanya digunakan sebagai lalaban, orang yang kekurangan darah, darah kotor, jantung
+                                        yang berdebar, menghilangkan batuk, gangguan pencernaan, sifilis, hipertensi dan kencing yang benanah. efek farmakologis yaitu rasa asam, peluruh keringat, hilangkan haus, hilangkan racun, dan meningkatkan sirkulasi
+                                        darah.
+                                    </p>
+                                    <p style="text-align:justify;">
+                                        <b>Ekologi  :</b>
+                                        <br>Buni tidak khusus merupakan pohon tropik, sebab dapat pula tumbuh dan berbuah di Florida bagian tengah. Di daerah tropik buni dijumpai tumbuh dari 0 m dpl. sampai di atas 1000 m dpl. Di Indonesia, buni ditanam di
+                                        propinsi-propinsi bagian timur yang beriklim muson, juga di bagian barat yang lembab.
+
+                                    </p>
+                                    <p style="text-align:justify;">
+                                        <b>Klasifikasi</b>
+                                        <br>Kingdom : Plantae
+                                        <br>Divisi : Magnoliophyta
+                                        <br>Kelas : Equisetopsida
+                                        <br>Ordo : Malpighiales
+                                        <br>Famili : Phyllanthaceae
+                                        <br>Genus : Antidesma
+                                        <br>Spesies : Antidesma bunius (L.) Spreng.
+                                        <br>
+                                        <br>
+                                        <br>(sumber: tropicos.com)
+                                    </p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="profile11">Lokasi Kampus A
+                                    <br>
+                                    <iframe src="kampusA.html" width="690px" height="420px"></iframe>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="messages11">
+                                    <div id="carousel-example11" class="carousel slide" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example11" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example11" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example11" data-slide-to="2"></li>
+                                        </ol>
+
+                                        <div class="carousel-inner">
+                                            <div class="item active">
+                                                <a href="#">
+                                                    <img src="http://placekitten.com/1600/600">
+                                                </a>
+                                                <div class="carousel-caption">
+                                                    <h3>Meow</h3>
+                                                    <p>Just Kitten Around</p>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <img src="http://placekitten.com/1600/600">
+                                                </a>
+                                                <div class="carousel-caption">
+                                                    <h3>Meow</h3>
+                                                    <p>Just Kitten Around</p>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <img src="http://placekitten.com/1600/600">
+                                                </a>
+                                                <div class="carousel-caption">
+                                                    <h3>Meow</h3>
+                                                    <p>Just Kitten Around</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <a class="left carousel-control" href="#carousel-example11" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left"></span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example11" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right"></span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+
+        </div>
+        <div class="upage hidden main" id="data12">
+            <div class="upage-outer">
+                <div class="uib-header header-bg container-group inner-element uib_w_79" data-uib="layout/header" data-ver="0">
+                    <h2></h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+                <div class="upage-content ac0 content-area vertical-col left" id="page_65_6"></div>
+                <div class="uib-footer uib-footer-fixed footer-bg container-group inner-element uib_w_80" data-uib="layout/footer" data-ver="0">
+                    <h2></h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left">
+                        <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_81 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                        href="#">
+                            <img src="img/nav/back.png">
+                            <span class="uib-caption"> </span>
+                        </a>
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+            </div>
+
+            <div class="container">
+                <center>
+                    <h3><b>Cemara norflok // Araucariaceae</b></h3>
+                    <img src="img/content/label/label-data12.png" width="40%" height="55%">
+                </center>
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Nav tabs -->
+                        <div class="card">
+                            <ul class="nav nav-tabs" role="tablist">
+
+                                <li role="presentation" class="active"><a href="#desc12" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-info"></i>&nbsp; <span>Deskripsi</span></a>
+                                </li>
+                                <li role="presentation"><a href="#profile12" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-map-marker"></i>&nbsp; <span>Lokasi</span></a>
+                                </li>
+                                <li role="presentation"><a href="#messages12" aria-controls="messages" role="tab" data-toggle="tab"><i class="fa fa-photo"></i>&nbsp; <span>Foto</span></a>
+                                </li>
+
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane asd active" id="desc12">
+                                    <p style="text-align:justify;">
+                                        <b>Akar :</b>
+                                        <br>Tunggang, mudah mengelupas seperti serutan pensil.
+                                    </p>
+                                    <p style="text-align:justify;">
+                                        <b>Batang :</b>
+                                        <br>Bentuk bulat, banyak lentisel, warna abu-abu kehitaman, mudah mengelupas, ketika dikelupas di dalamnya terdapat warna ungu ubi, terdapat resin, pada ranting terdapat berkas tonjolan, berkas daun mudah diluruhkan.
+                                    </p>
+                                    <p style="text-align:justify;">
+                                        <b>Daun :</b>
+                                        <br>Daun bentuk dabus (subuli formis), aroma daun masam seperti kedondong, pada Araucaria terbagi menjadi 2 bagian yaitu ortotrop (daun secara keseluruhan membentuk ↑) dan plagiotrop (daun pada pohon secara keseluruhan
+                                        membentuk↓).
+
+                                    </p>
+                                    <p style="text-align:justify;">
+                                        <b>Diameter pohon :</b>
+                                        <br>20cm.
+                                    </p>
+                                    <p style="text-align:justify;">
+                                        <b>Tinggi pohon :</b>
+                                        <br>10m.
+                                    </p>
+                                    <p style="text-align:justify;">
+                                        <b>Ekologi &amp; Kegunaan :</b>
+                                        <br>Pohon cemara ini sering juga di gunakan sebagai pohon natal, dimanfaatkan juga sebagai peneduh jalan, penahan angin, banjir, dan erosi. Sedangkan batangnya mengandung resin yang dapat dimanfaatkan untuk industri
+                                        kosmetik.
+                                    </p>
+                                    <p style="text-align:justify;">
+                                        <b>Habitat  :</b>
+                                        <br>Dapat tumbuh pada daerah – daerah dataran rendah.
+                                    </p>
+                                    <p style="text-align:justify;">
+                                        <b>Distribusi  :</b>
+                                        <br>Kepulauan Norfolk Selandia baru, Indonesia, dan daerah Tropis lainnya.
+                                    </p>
+                                    <p style="text-align:justify;">
+                                        <b>Klasifikasi</b>
+                                        <br>Kingdom : Plantae
+                                        <br>Divisi : Coniferophyta
+                                        <br>Kelas : Equisetopsida
+                                        <br>Ordo : Araucariales
+                                        <br>Famili : Araucariaceae
+                                        <br>Genus : Araucaria
+                                        <br>Spesies : Araucaria heterophylla (Salisb.) Franco
+                                        <br>
+                                        <br>
+                                        <br>(sumber: tropicos.com)
+                                    </p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="profile12">Lokasi Kampus A &amp; B
+                                    <br>
+                                    <iframe src="kampusAB.html" width="690px" height="420px"></iframe>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="messages12">
+                                    <div id="carousel-example12" class="carousel slide" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example12" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example12" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example12" data-slide-to="2"></li>
+                                        </ol>
+
+                                        <div class="carousel-inner">
+                                            <div class="item active">
+                                                <a href="#">
+                                                    <img src="http://placekitten.com/1600/600">
+                                                </a>
+                                                <div class="carousel-caption">
+                                                    <h3>Meow</h3>
+                                                    <p>Just Kitten Around</p>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <img src="http://placekitten.com/1600/600">
+                                                </a>
+                                                <div class="carousel-caption">
+                                                    <h3>Meow</h3>
+                                                    <p>Just Kitten Around</p>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <img src="http://placekitten.com/1600/600">
+                                                </a>
+                                                <div class="carousel-caption">
+                                                    <h3>Meow</h3>
+                                                    <p>Just Kitten Around</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <a class="left carousel-control" href="#carousel-example12" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left"></span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example12" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right"></span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+
+        </div>
+        <div class="upage hidden main" id="data13">
+            <div class="upage-outer">
+                <div class="uib-header header-bg container-group inner-element uib_w_82" data-uib="layout/header" data-ver="0">
+                    <h2></h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+                <div class="upage-content ac0 content-area vertical-col left" id="page_88_72"></div>
+                <div class="uib-footer uib-footer-fixed footer-bg container-group inner-element uib_w_83" data-uib="layout/footer" data-ver="0">
+                    <h2></h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left">
+                        <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_84 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                        href="#">
+                            <img src="img/nav/back.png">
+                            <span class="uib-caption"> </span>
+                        </a>
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+            </div>
+            <div class="container">
+                <center>
+                    <h3><b>Sukun // Moraceae </b></h3>
+                    <img src="img/content/label/label-data13.png" width="40%" height="55%">
+                </center>
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Nav tabs -->
+                        <div class="card">
+                            <ul class="nav nav-tabs" role="tablist">
+
+                                <li role="presentation" class="active"><a href="#desc13" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-info"></i>&nbsp; <span>Deskripsi</span></a>
+                                </li>
+                                <li role="presentation"><a href="#profile13" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-map-marker"></i>&nbsp; <span>Lokasi</span></a>
+                                </li>
+                                <li role="presentation"><a href="#messages13" aria-controls="messages" role="tab" data-toggle="tab"><i class="fa fa-photo"></i>&nbsp; <span>Foto</span></a>
+                                </li>
+
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane asd active" id="desc13">
+                                    <p style="text-align:justify;">
+                                        <b>Akar :</b>
+                                        <br>Banir kecil.
+                                    </p>
+                                    <p style="text-align:justify;">
+                                        <b>Batang :</b>
+                                        <br>bentuk bulat, banyak terdapat lentisel bentuk vertikal, horizontal dan bulat menonjol, permukaan batang kasar, memiliki getah/lateks warna putih, bagian dalam kulit batang warna kuning kehijauan.
+                                    </p>
+                                    <p style="text-align:justify;">
+                                        <b>Ranting :</b>
+                                        <br>bentuk bulat, penuh lentisel; Daun: bentuk ovate, tepi daun lacinate, palmate, menjari, ujung daun runcing, basal daun runcing, permukaan daun licin mengkilap serta terdapat rambut tegak, tangkai daun mengkerut
+                                        bagian atas, terdapat leaf scar (berkas tangkai) bentuk bulat, tekstur daun perkamen seperti kertas.
+
+                                    </p>
+                                    <p style="text-align:justify;">
+                                        <b>Perbungaan :</b>
+                                        <br>terdapat babal dengan ukuran 15 cm dan tangkai 19 cm.
+
+                                    </p>
+                                    <p style="text-align:justify;">
+                                        <b>Diameter pohon :</b>
+                                        <br>37cm.
+                                    </p>
+                                    <p style="text-align:justify;">
+                                        <b>Tinggi pohon :</b>
+                                        <br>12m.
+                                    </p>
+                                    <p style="text-align:justify;">
+                                        <b>Ekologi &amp; Kegunaan :</b>
+                                        <br>Buah sukun mengandung gizi yang cukup tinggi, satu buah sukun dapat dikonsumsi sebagai pengganti beras untuk 3-4 orang. Manfaat lain adalah kayunya untuk bahan konstruksi ringan,&nbsp; papan kayu yang dikilapkan,
+                                        papan seluncur/kano, kotak/peti, mebel, mainan dan bahan baku pulp. Daunnya juga diyakini berkhasiat sebagai obat tradisional untuk mengatasi gangguan pada ginjal dan jantung menurunkan tekanan darah, mengatasi
+                                        penyakit asma, infeksi kulit, sakit gigi dan diare.
+                                    </p>
+                                    <p style="text-align:justify;">
+                                        <b>Penyebaran  :</b>
+                                        <br>Penyebaran sukun&nbsp; di Indonesia meliputi Sumatera (Aceh, Sumatera Utara, Sumatera Barat, Riau, Nias, Lampung), Pulau Jawa (Kepulauan Seribu, Jawa Barat, Jawa Tengah, Yogyakarta, Jawa Timur, Madura), Bali, Nusa
+                                        Tenggara Barat, Nusa Tenggara Timur, Sulawesi, Maluku dan Papua.
+                                    </p>
+                                    <p style="text-align:justify;">
+                                        <b>Klasifikasi</b>
+                                        <br>Kingdom : Plantae
+                                        <br>Divisi : Magnoliophyta
+                                        <br>Kelas : Equisetopsida
+                                        <br>Ordo : Rosales
+                                        <br>Famili : Moraceae
+                                        <br>Genus : Artocarpus
+                                        <br>Spesies : Artocarpus altilis (Parkinson) Fosberg
+                                        <br>
+                                        <br>
+                                        <br>(sumber: tropicos.com)
+                                    </p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="profile13">Lokasi Kampus A &amp; B
+                                    <br>
+                                    <iframe src="kampusAB.html" width="690px" height="420px"></iframe>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="messages13">
+                                    <center>
+                                        <div id="carousel-example13" class="carousel slide" style="width:400px" data-ride="carousel">
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#carousel-example13" data-slide-to="0" class="active"></li>
+                                                <li data-target="#carousel-example13" data-slide-to="1"></li>
+                                                <li data-target="#carousel-example13" data-slide-to="2"></li>
+                                                <li data-target="#carousel-example13" data-slide-to="3"></li>
+                                                <li data-target="#carousel-example13" data-slide-to="4"></li>
+                                                <li data-target="#carousel-example13" data-slide-to="5"></li>
+                                                <li data-target="#carousel-example13" data-slide-to="6"></li>
+                                                <li data-target="#carousel-example13" data-slide-to="7"></li>
+                                            </ol>
+
+                                            <div class="carousel-inner">
+                                                <div class="item active">
+                                                    <a href="#">
+                                                        <img src="img/content/data13/0.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#">
+                                                        <img src="img/content/data13/1.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#">
+                                                        <img src="img/content/data13/2.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#">
+                                                        <img src="img/content/data13/3.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#">
+                                                        <img src="img/content/data13/4.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#">
+                                                        <img src="img/content/data13/5.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#">
+                                                        <img src="img/content/data13/6.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#">
+                                                        <img src="img/content/data13/7.jpg">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <a class="left carousel-control" href="#carousel-example13" data-slide="prev">
+                                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                            </a>
+                                            <a class="right carousel-control" href="#carousel-example13" data-slide="next">
+                                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                            </a>
+                                        </div>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+
+        </div>
+        <div class="upage hidden main" id="data14">
+            <div class="upage-outer">
+                <div class="uib-header header-bg container-group inner-element uib_w_85" data-uib="layout/header" data-ver="0">
+                    <h2></h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+                <div class="upage-content ac0 content-area vertical-col left"></div>
+                <div class="uib-footer uib-footer-fixed footer-bg container-group inner-element uib_w_86" data-uib="layout/footer" data-ver="0">
+                    <h2></h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left">
+                        <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_87 d-margins media-button-text-bottom" data-uib="media/graphic_button"
+                        data-ver="0" href="#">
+                            <img src="img/nav/back.png">
+                            <span class="uib-caption"> </span>
+                        </a>
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+            </div>
         </div>
     </body>
 
