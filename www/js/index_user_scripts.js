@@ -298,6 +298,30 @@
          /*global activate_page */
          activate_page("#data13"); 
          return false;
+    }); 
+    $(document).on("click", "#list-data14", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#data14"); 
+         return false;
+    });    
+    $(document).on("click", "#list-data15", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#data15"); 
+         return false;
+    });    
+    $(document).on("click", "#list-data16", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#data16"); 
+         return false;
+    });    
+    $(document).on("click", "#list-data17", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#data17"); 
+         return false;
     });
      
 /* END LIST SEARCH ACTION */
@@ -407,6 +431,30 @@
     
         /* graphic button  .uib_w_87 */
     $(document).on("click", ".uib_w_87", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#hal1"); 
+         return false;
+    });
+    
+        /* graphic button  .uib_w_90 */
+    $(document).on("click", ".uib_w_90", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#hal1"); 
+         return false;
+    });
+    
+        /* graphic button  .uib_w_93 */
+    $(document).on("click", ".uib_w_93", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#hal1"); 
+         return false;
+    });
+    
+        /* graphic button  #back17 */
+    $(document).on("click", "#back17", function(evt)
     {
          /*global activate_page */
          activate_page("#hal1"); 
@@ -583,6 +631,38 @@ document.addEventListener("backbutton",function(e){
 document.addEventListener("backbutton",function(e){
         
          if($("#data13").is(":visible")){
+             e.preventDefault();
+             activate_page("#hal1");
+         }
+        
+     },false);
+document.addEventListener("backbutton",function(e){
+        
+         if($("#data14").is(":visible")){
+             e.preventDefault();
+             activate_page("#hal1");
+         }
+        
+     },false);
+document.addEventListener("backbutton",function(e){
+        
+         if($("#data15").is(":visible")){
+             e.preventDefault();
+             activate_page("#hal1");
+         }
+        
+     },false);
+document.addEventListener("backbutton",function(e){
+        
+         if($("#data16").is(":visible")){
+             e.preventDefault();
+             activate_page("#hal1");
+         }
+        
+     },false);
+document.addEventListener("backbutton",function(e){
+        
+         if($("#data17").is(":visible")){
              e.preventDefault();
              activate_page("#hal1");
          }
