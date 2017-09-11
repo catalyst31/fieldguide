@@ -322,6 +322,24 @@
          /*global activate_page */
          activate_page("#data17"); 
          return false;
+    });    
+    $(document).on("click", "#list-data18", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#data18"); 
+         return false;
+    });    
+    $(document).on("click", "#list-data19", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#data19"); 
+         return false;
+    });    
+    $(document).on("click", "#list-data20", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#data20"); 
+         return false;
     });
      
 /* END LIST SEARCH ACTION */
@@ -455,6 +473,27 @@
     
         /* graphic button  #back17 */
     $(document).on("click", "#back17", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#hal1"); 
+         return false;
+    });
+     /* graphic button  #back17 */
+    $(document).on("click", "#back18", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#hal1"); 
+         return false;
+    });
+     /* graphic button  #back17 */
+    $(document).on("click", "#back19", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#hal1"); 
+         return false;
+    });
+     /* graphic button  #back17 */
+    $(document).on("click", "#back20", function(evt)
     {
          /*global activate_page */
          activate_page("#hal1"); 
@@ -663,6 +702,22 @@ document.addEventListener("backbutton",function(e){
 document.addEventListener("backbutton",function(e){
         
          if($("#data17").is(":visible")){
+             e.preventDefault();
+             activate_page("#hal1");
+         }
+        
+     },false);
+document.addEventListener("backbutton",function(e){
+        
+         if($("#data18").is(":visible")){
+             e.preventDefault();
+             activate_page("#hal1");
+         }
+        
+     },false);
+document.addEventListener("backbutton",function(e){
+        
+         if($("#data19").is(":visible")){
              e.preventDefault();
              activate_page("#hal1");
          }
