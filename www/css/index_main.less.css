@@ -1850,7 +1850,7 @@ body#afui .splt {
 }
 @media all {
   .grid-height {
-    height: 80vh;
+    height: 300px;
   }
 }
 .uib_row_1:not(.cright) > .col {
