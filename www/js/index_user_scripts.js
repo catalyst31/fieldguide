@@ -500,6 +500,22 @@
          return false;
     });
     
+        /* graphic button  .uib_w_107 */
+    $(document).on("click", ".uib_w_107", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#bentukdaun"); 
+         return false;
+    });
+    
+        /* graphic button  .uib_w_113 */
+    $(document).on("click", ".uib_w_113", function(evt)
+    {
+        /* your code goes here */ 
+        activate_page("#hal1"); 
+         return false;
+    });
+    
     }
  document.addEventListener("app.Ready", register_event_handlers, false);
 })();

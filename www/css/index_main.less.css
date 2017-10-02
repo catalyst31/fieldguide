@@ -1662,15 +1662,10 @@ body#afui .splt {
 }
 @media all {
   .grid-pad {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     padding-left: 20px;
     padding-right: 20px;
-  }
-}
-@media all and (min-width: 654px) {
-  .row-height-1 > .col > .content-area {
-    min-height: 243px;
   }
 }
 @media all {
@@ -1855,6 +1850,40 @@ body#afui .splt {
 }
 @media all {
   .grid-height {
-    height: 50vh;
+    height: 80vh;
+  }
+}
+.uib_row_1:not(.cright) > .col {
+  padding-right: 5px;
+}
+.uib_row_1.cright > .col {
+  padding-left: 5px;
+}
+@media all {
+  .col-0_12-12 {
+    width: auto;
+    float: none !important;
+  }
+  .urow:not(.cright) > .col-0_12-12 {
+    padding-right: 0px !important;
+  }
+  .urow.cright > .col-0_12-12 {
+    padding-left: 0px !important;
+  }
+}
+@media all {
+  .menu > img {
+    width: 70%;
+    height: 120%;
+  }
+}
+@media all {
+  .btn-menu {
+    width: 100% !important;
+    -webkit-flex: 0 0 auto !important;
+    -moz-flex: 0 0 auto !important;
+    -ms-flex: 0 0 auto !important;
+    -o-flex: 0 0 auto !important;
+    flex: 0 0 auto !important;
   }
 }
