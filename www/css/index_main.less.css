@@ -524,7 +524,7 @@ body#afui .splt {
 }
 @media all {
   .default-button-bar-height {
-    height: 90px;
+    height: 100px;
   }
 }
 .uib-card {
@@ -1874,7 +1874,7 @@ body#afui .splt {
 @media all {
   .menu > img {
     width: 70%;
-    height: 120%;
+    height: 150%;
   }
 }
 @media all {
@@ -1885,5 +1885,41 @@ body#afui .splt {
     -ms-flex: 0 0 auto !important;
     -o-flex: 0 0 auto !important;
     flex: 0 0 auto !important;
+  }
+}
+.sbs-container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -o-flex;
+  display: flex;
+  flex-direction: row;
+}
+.leftContent,
+.rightContent {
+  display: inline;
+  width: 50%;
+}
+@media all {
+  .bntkdaun {
+    width: 25% !important;
+    -webkit-flex: 0 0 auto !important;
+    -moz-flex: 0 0 auto !important;
+    -ms-flex: 0 0 auto !important;
+    -o-flex: 0 0 auto !important;
+    flex: 0 0 auto !important;
+  }
+}
+@media all {
+  .daun > img {
+    width: 80%;
+  }
+}
+@media all {
+  .bntk {
+    background-color: #aad9ab;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 }

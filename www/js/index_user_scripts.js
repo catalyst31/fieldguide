@@ -516,6 +516,14 @@
          return false;
     });
     
+        /* graphic button  .uib_w_119 */
+    $(document).on("click", ".uib_w_119", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#listbentukd"); 
+         return false;
+    });
+    
     }
  document.addEventListener("app.Ready", register_event_handlers, false);
 })();
