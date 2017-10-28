@@ -342,6 +342,13 @@
          return false;
     });
      
+    $(document).on("click", "#list-data21", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#data21"); 
+         return false;
+    });
+     
 /* END LIST SEARCH ACTION */
 /* END LIST SEARCH ACTION */
 /* END LIST SEARCH ACTION */
@@ -742,6 +749,14 @@ document.addEventListener("backbutton",function(e){
 document.addEventListener("backbutton",function(e){
         
          if($("#data19").is(":visible")){
+             e.preventDefault();
+             activate_page("#hal1");
+         }
+        
+     },false);
+document.addEventListener("backbutton",function(e){
+        
+         if($("#data20").is(":visible")){
              e.preventDefault();
              activate_page("#hal1");
          }

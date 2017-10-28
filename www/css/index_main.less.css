@@ -1960,8 +1960,7 @@ h4.list-group-item-heading {
   font-size: 15px;
   background: transparent;
   background-image: url('../img/content/menu/menu1.png');
-  /*background-position: 6px 2px;
-  */
+  background-position: center center;
   background-size: 85% 105%;
   background-repeat: no-repeat;
   min-height: 0px;
@@ -1988,8 +1987,51 @@ h4.list-group-item-heading {
   font-size: 15px;
   background: transparent;
   background-image: url('../img/content/menu/menu2.png');
-  /*background-position: 6px 2px;
-  */
+  background-position: center center;
+  background-size: 85% 105%;
+  background-repeat: no-repeat;
+  min-height: 0px;
+}
+.list3 {
+  text-align: right;
+  color: white;
+  font-size: 15px;
+  background: transparent;
+  background-image: url('../img/content/menu/menu3.png');
+  background-position: center center;
+  background-size: 85% 105%;
+  background-repeat: no-repeat;
+  min-height: 0px;
+}
+.list4 {
+  text-align: right;
+  color: white;
+  font-size: 15px;
+  background: transparent;
+  background-image: url('../img/content/menu/menu2.png');
+  background-position: center center;
+  background-size: 85% 105%;
+  background-repeat: no-repeat;
+  min-height: 0px;
+}
+.list5 {
+  text-align: right;
+  color: white;
+  font-size: 15px;
+  background: transparent;
+  background-image: url('../img/content/menu/menu5.png');
+  background-position: center center;
+  background-size: 85% 105%;
+  background-repeat: no-repeat;
+  min-height: 0px;
+}
+.list6 {
+  text-align: right;
+  color: white;
+  font-size: 15px;
+  background: transparent;
+  background-image: url('../img/content/menu/menu6.png');
+  background-position: center center;
   background-size: 85% 105%;
   background-repeat: no-repeat;
   min-height: 0px;
