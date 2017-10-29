@@ -7,14 +7,68 @@
  */
  function register_event_handlers()
  {
-    
-    
-     /* button  Button */
-$$('.uib_w_3').on('click', function () {
-    myApp.confirm('Are you sure?', 'Custom Title', function () {
-        navigator.app.exitApp();
-    });
+/*Open Menu */
+     
+$('#in').on('click', function () {
+   
+    myApp.showPreloader('Silahkan Tunggu ...')
+    setTimeout(function () {
+        myApp.hidePreloader();
+        window.open("menu.html");
+    }, 5000);
+   
+});    
+     
+     
+     
+     
+     
+/*Exit Modals */
+     
+$('#exit').on('click', function () {
+  var modal = myApp.modal({
+    title: '<center>Konfirmasi Keluar</center>',
+    text: '<center>Apakah Anda Yakin ?</center>',
+    afterText:  '<center><img src="images/exit.gif" width="100%" height="150" style="display:block"></center>',
+    buttons: [
+      {
+        text: 'Tidak'
+      },
+      {
+        text: 'Ya !',
+        bold: true,
+        onClick: function () {
+          navigator.app.exitApp();
+        }
+      },
+    ]
+  })
 });
+    
+
+        /* graphic button  #location */
+    $(document).on("click", "#location", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#lokasi"); 
+         return false;
+    });
+    
+        /* tab  Kampus A - UNJ */
+    $(document).on("click", ".uib_w_8", function(evt)
+    {
+         /*global activate_subpage */
+         activate_subpage("#kampusA"); 
+         return false;
+    });
+    
+        /* tab  Kampus B - UNJ */
+    $(document).on("click", ".uib_w_9", function(evt)
+    {
+         /*global activate_subpage */
+         activate_subpage("#kampusB"); 
+         return false;
+    });
     
     }
  document.addEventListener("app.Ready", register_event_handlers, false);

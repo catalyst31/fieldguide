@@ -6,10 +6,9 @@
 
     <head>
         <link rel="stylesheet" type="text/css" href="media_button_bar/css/media_button_bar.css">
-        <link rel="stylesheet" type="text/css" href="framework7/css/framework7.ios.colors.min.css">
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="framework7/css/framework7.ios.min.css">
-        <title>Blank App Designer Cordova Web App Project Template</title>
+        <title> baru</title>
         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 
         <!--
@@ -65,9 +64,9 @@
         <!-- normalizes device and document ready events, see file for details -->
         <script type="application/javascript" src="lib/jquery.min.js"></script>
         <script type="application/javascript" src="framework7/js/framework7.min.js"></script>
-        <script type="application/javascript" src="js/calendar.js"></script>
-        <script type="application/javascript" src="js/pull-to-refresh.js"></script>
         <script type="application/javascript" src="js/index_user_scripts.js"></script>
+        <script type="application/javascript" src="xdk/ad/fw7_subpage.js"></script>
+        <script src="js/w3.js"></script>
     </head>
 
     <body>
@@ -79,8 +78,7 @@
                 <div class="pages">
 
                     <div class="page navbar-fixed">
-
-                        <div class="navbar inner-element uib_w_1 header1" data-uib="framework7/header" data-ver="0">
+                        <div class="navbar inner-element uib_w_1 head-main" data-uib="framework7/header" data-ver="0">
                             <div class="navbar-inner">
                                 <div class="left">
                                     <div class="widget-container content-area horiz-area wrapping-col"></div>
@@ -91,42 +89,104 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="upage-outer">
-                            <div class="upage-content ac0 content-area vertical-col left page-content pull-to-refresh-content" id="page_6_20" data-ptr-distance="44">
-                                <div class="uib-grid widget uib_w_2 grid-text grid-height d-margins" data-uib="layout/grid" data-ver="1">
-                                    <div class="uib-grid-row">
-                                        <div class="uib-grid-cell widget-container">
-                                        </div>
-                                        <div class="uib-grid-cell widget-container"></div>
-                                        <div class="uib-grid-cell widget-container"></div>
+                        <div class="upage-content ac0 content-area vertical-col left page-content" id="page_47_27">
+                            <div class="uib-grid widget uib_w_2 grid-text grid-height d-margins" data-uib="layout/grid" data-ver="1">
+                                <div class="uib-grid-row">
+                                    <div class="uib-grid-cell widget-container"></div>
+                                    <div class="uib-grid-cell widget-container"></div>
+                                    <div class="uib-grid-cell widget-container"></div>
+                                    <div class="uib-grid-cell widget-container"></div>
+                                    <div class="uib-grid-cell widget-container"></div>
+                                </div>
+                                <div class="uib-grid-row">
+                                    <div class="uib-grid-cell widget-container"></div>
+                                    <div class="uib-grid-cell widget-container"></div>
+                                    <div class="uib-grid-cell widget-container"></div>
+                                    <div class="uib-grid-cell widget-container"></div>
+                                    <div class="uib-grid-cell widget-container"></div>
+                                </div>
+                                <div class="uib-grid-row">
+                                    <div class="uib-grid-cell widget-container"></div>
+                                    <div class="uib-grid-cell widget-container">
+                                        <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_3 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                                        href="#" id="exit">
+                                            <img src="images/nav/out.png">
+                                            <span class="uib-caption"> </span>
+                                        </a>
                                     </div>
-                                    <div class="uib-grid-row">
-                                        <div class="uib-grid-cell widget-container">
-                                            <a class="uib-graphic-button hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_3 d-margins imgsize1 media-button-text-bottom" data-uib="media/graphic_button" data-ver="0" href="#" id="exit">
-                                                <img src="images/nav/out.png">
-                                                <span class="uib-caption"> </span>
-                                            </a>
-                                        </div>
-                                        <div class="uib-grid-cell widget-container">
-                                            <a class="uib-graphic-button hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_4 d-margins imgsize1 media-button-text-bottom" data-uib="media/graphic_button" data-ver="0" href="#" id="camploc">
-                                                <img src="images/nav/loc.png">
-                                                <span class="uib-caption"> </span>
-                                            </a>
-                                        </div>
-                                        <div class="uib-grid-cell widget-container">
-                                            <a class="uib-graphic-button hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_5 d-margins imgsize1 media-button-text-bottom" data-uib="media/graphic_button" data-ver="0" href="#" id="masuk">
-                                                <img src="images/nav/in.png">
-                                                <span class="uib-caption"> </span>
-                                            </a>
-                                        </div>
+                                    <div class="uib-grid-cell widget-container">
+                                        <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_4 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                                        href="#" id="location">
+                                            <img src="images/nav/loc.png">
+                                            <span class="uib-caption"> </span>
+                                        </a>
+                                    </div>
+                                    <div class="uib-grid-cell widget-container">
+                                        <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_5 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                                        href="#" id="in">
+                                            <img src="images/nav/in.png">
+                                            <span class="uib-caption"> </span>
+                                        </a>
+                                    </div>
+                                    <div class="uib-grid-cell widget-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="upage vertical-col left hidden view" id="lokasi">
+                <div class="pages">
+                    <div class="page navbar-fixed">
+                        <div class="navbar inner-element uib_w_6" data-uib="framework7/header" data-ver="0">
+                            <div class="navbar-inner">
+                                <div class="left">
+                                    <div class="widget-container content-area horiz-area wrapping-col"></div>
+                                </div>
+                                <div class="center labeltext">Header</div>
+                                <div class="right">
+                                    <div class="widget-container content-area horiz-area wrapping-col"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- TAB -->
+
+                        <div class="page-content hide-navbar-on-scroll">
+                            <div class="content-block">
+                                <!-- Buttons row as tabs controller -->
+                                <div class="buttons-row">
+                                    <!-- Link to 1st tab, active -->
+                                    <a href="#tab1" class="tab-link active button">UNJ - Kampus A</a>
+                                    <!-- Link to 2nd tab -->
+                                    <a href="#tab2" class="tab-link button">UNJ - Kampus B</a>
+                                    <!-- Link to 3rd tab -->
+                                </div>
+                            </div>
+                            <!-- Tabs, tabs wrapper -->
+                            <div class="tabs">
+                                <!-- Tab 1, actsive by default -->
+                                <div id="tab1" class="tab active">
+                                    <div class="content-block">
+                                        <iframe src="kampusA.html" width="100%" height="500px"></iframe>
                                     </div>
                                 </div>
-
+                                <!-- Tab 2 -->
+                                <div id="tab2" class="tab">
+                                    <div class="content-block">
+                                       
+                                    </div>
+                                </div>
+                                <!-- Tab 3 -->
                             </div>
                         </div>
 
-                    </div>
+                        <!-- TAB -->
+                        <div class="page-content upage-content content-area hide-navbar-on-scroll" id="page_57_1">
 
+                        </div>
+                    </div>
                 </div>
 
             </div>
