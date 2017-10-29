@@ -12,7 +12,7 @@
      /* button  Button */
 $$('.uib_w_3').on('click', function () {
     myApp.confirm('Are you sure?', 'Custom Title', function () {
-        myApp.alert('You clicked Ok button');
+        navigator.app.exitApp();
     });
 });
     
