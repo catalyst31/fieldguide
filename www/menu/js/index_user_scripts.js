@@ -23,14 +23,25 @@ $$('#btnmenu').on('click', function () {
             text: 'Cari Suku Pohon',
             bold: true,
             onClick: function () {
-                myApp.alert('Button1 clicked');
+             activate_page("#suku"); 
+         return false;
             }
         },
         {
-            text: 'Button2',
+            text: 'Informasi',
+        },
+        {
+            text: 'Petunjuk Aplikasi',
+        },
+        {
+            text: 'Tentang Aplikasi',
         }
     ];
     var buttons2 = [
+        {
+            text: '<center><img src="images/petunjuk.png" width="15%" height="35px" style="display:block"></center>',
+            color: 'red'
+        },
         {
             text: 'Cancel',
             color: 'red'
@@ -39,6 +50,14 @@ $$('#btnmenu').on('click', function () {
     var groups = [buttons1, buttons2];
     myApp.actions(groups);
 });
+    
+        /* button  Back */
+    $(document).on("click", ".uib_w_4", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#menu"); 
+         return false;
+    });
     
     }
  document.addEventListener("app.Ready", register_event_handlers, false);

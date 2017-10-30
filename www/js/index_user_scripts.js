@@ -11,11 +11,11 @@
      
 $('#in').on('click', function () {
    
-    myApp.showPreloader('Silahkan Tunggu ...')
+    myApp.showPreloader('Tunggu Sebentar ...')
     setTimeout(function () {
         myApp.hidePreloader();
         window.open("menu/index.html");
-    }, 5000);
+    }, 800);
    
 });    
      
@@ -29,7 +29,7 @@ $('#exit').on('click', function () {
   var modal = myApp.modal({
     title: '<center>Konfirmasi Keluar</center>',
     text: '<center>Apakah Anda Yakin ?</center>',
-    afterText:  '<center><img src="images/exit.gif" width="100%" height="150" style="display:block"></center>',
+    afterText:  '<center><img src="menu/images/exit.gif" width="100%" height="150" style="display:block"></center>',
     buttons: [
       {
         text: 'Tidak'
