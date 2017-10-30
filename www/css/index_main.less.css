@@ -440,6 +440,16 @@ body#afui .splt {
     margin-left: 3px;
     margin-right: 4px;
   }
+  .vertical-col > .d-margins,
+  .vertical-col > .afScrollPanel > .d-margins {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  .vertical-col > .d-margins,
+  .vertical-col > .afScrollPanel > .d-margins {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
   .d-margins {
     margin-top: 5px;
     margin-bottom: 6px;
@@ -470,7 +480,7 @@ body#afui .splt {
 }
 @media all {
   .default-graphic-sizing {
-    width: 110% !important;
+    width: 80% !important;
     -webkit-flex: 0 0 auto !important;
     -moz-flex: 0 0 auto !important;
     -ms-flex: 0 0 auto !important;
@@ -481,6 +491,12 @@ body#afui .splt {
 }
 @media all {
   .default-image-sizing > img {
-    width: 160%;
+    width: 130%;
   }
+}
+.button-icon-left {
+  float: left;
+}
+.button-icon-right {
+  float: right;
 }

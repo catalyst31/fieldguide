@@ -14,7 +14,7 @@ $('#in').on('click', function () {
     myApp.showPreloader('Silahkan Tunggu ...')
     setTimeout(function () {
         myApp.hidePreloader();
-        window.open("menu.html");
+        window.open("menu/index.html");
     }, 5000);
    
 });    
@@ -67,6 +67,22 @@ $('#exit').on('click', function () {
     {
          /*global activate_subpage */
          activate_subpage("#kampusB"); 
+         return false;
+    });
+    
+        /* button  Button */
+    $(document).on("click", ".uib_w_8", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#mainpage"); 
+         return false;
+    });
+    
+        /* button  Back */
+    $(document).on("click", ".uib_w_7", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#mainpage"); 
          return false;
     });
     
