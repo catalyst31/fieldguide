@@ -1,3 +1,5 @@
+
+
 /*jshint browser:true */
 /*global $ */(function()
 {
@@ -11,7 +13,7 @@
      
 $('#in').on('click', function () {
    
-    myApp.showPreloader('Tunggu Sebentar ...')
+    myApp.showPreloader('Tunggu Sebentar ...');
     setTimeout(function () {
         myApp.hidePreloader();
         window.open("menu/index.html");
@@ -42,7 +44,7 @@ $('#exit').on('click', function () {
         }
       },
     ]
-  })
+  });
 });
     
 
@@ -55,20 +57,6 @@ $('#exit').on('click', function () {
     });
     
         /* tab  Kampus A - UNJ */
-    $(document).on("click", ".uib_w_8", function(evt)
-    {
-         /*global activate_subpage */
-         activate_subpage("#kampusA"); 
-         return false;
-    });
-    
-        /* tab  Kampus B - UNJ */
-    $(document).on("click", ".uib_w_9", function(evt)
-    {
-         /*global activate_subpage */
-         activate_subpage("#kampusB"); 
-         return false;
-    });
     
         /* button  Button */
     $(document).on("click", ".uib_w_8", function(evt)

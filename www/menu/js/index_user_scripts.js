@@ -21,7 +21,6 @@ $$('#btnmenu').on('click', function () {
         },
         {
             text: 'Cari Suku Pohon',
-            bold: true,
             onClick: function () {
              activate_page("#suku"); 
          return false;
@@ -29,21 +28,33 @@ $$('#btnmenu').on('click', function () {
         },
         {
             text: 'Informasi',
+            onClick: function () {
+                activate_page("#info");
+            return false;
+            }
         },
         {
             text: 'Petunjuk Aplikasi',
+            onClick: function(){
+                activate_page("#petunjuk");
+                return false;
+            }
+
         },
         {
-            text: 'Tentang Aplikasi',
+            text: 'Tentang Aplikasi'
         }
     ];
     var buttons2 = [
         {
-            text: '<center><img src="images/petunjuk.png" width="15%" height="35px" style="display:block"></center>',
-            color: 'red'
+            text: 'Halaman Awal',
+            color: 'red',
+            onClick: function () {
+             window.open("../index.html");
+            }
         },
         {
-            text: 'Cancel',
+            text: 'Batal',
             color: 'red'
         }
     ];
@@ -51,8 +62,26 @@ $$('#btnmenu').on('click', function () {
     myApp.actions(groups);
 });
     
+     
+     
         /* button  Back */
     $(document).on("click", ".uib_w_4", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#menu"); 
+         return false;
+    });
+    
+        /* button  Back */
+    $(document).on("click", ".uib_w_6", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#menu"); 
+         return false;
+    });
+    
+        /* button  #back3 */
+    $(document).on("click", "#back3", function(evt)
     {
          /*global activate_page */
          activate_page("#menu"); 

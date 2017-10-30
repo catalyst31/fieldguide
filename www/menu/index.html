@@ -80,11 +80,12 @@
       </div>
       <div class="upage vertical-col left hidden view bg-menu" id="suku">
         <div class="pages">
+
           <div class="page navbar-fixed">
             <div class="navbar inner-element uib_w_3 head-main" data-uib="framework7/header" data-ver="0">
               <div class="navbar-inner">
                 <div class="left">
-                  <div class="widget-container content-area horiz-area wrapping-col"><a class="widget uib_w_4 d-margins link color-white" data-uib="framework7/button" data-ver="0"><i class="icon-back icon" data-position="left"></i><span>Back</span></a>
+                  <div class="widget-container content-area horiz-area wrapping-col"><a class="widget uib_w_4 d-margins link color-white" data-uib="framework7/button" data-ver="0" id="back1"><i class="icon-back icon" data-position="left"></i><span>Back</span></a>
                   </div>
                 </div>
                 <div class="center labeltext"></div>
@@ -94,88 +95,152 @@
               </div>
             </div>
             <div class="page-content upage-content content-area hide-navbar-on-scroll" id="page_47_32">
-              
-              <!-- Search Bar -->
-                <center><h2>Silahkan Cari Suku </h2></center>
 
-  <form data-search-list=".list-block-search" data-search-in=".item-title" class="searchbar searchbar-init">
-    <div class="searchbar-input">
-      <input type="search" placeholder="Cari Suku"><a href="#" class="searchbar-clear"></a>
-    </div><a href="#" class="searchbar-cancel">Batal</a>
-  </form>
- 
-  <!-- Search Bar overlay -->
-  <div class="searchbar-overlay"></div>
- 
-  <div class="page-content">
-    <!-- This block will be displayed if nothing found -->
-    <div class="content-block searchbar-not-found">
-      <div class="content-block-inner">Suku Tidak Tersedia</div>
-    </div>
- 
-    <!-- This block will be displayed if anything found, and this list block is used a searbar target -->
-    <div class="list-block list-block-search searchbar-found">
-      
-        
-<div class="content-block-title">List of Programming Lagauges</div>
-                     <div class="list-block accordion-list">
-                        <ul>
-                           <li class="accordion-item">
-                              <a href="#" class="item-content item-link">
-                                 <div class="item-inner">
-                                    <div class="item-title">C</div>
-                                 </div>
-                              </a>
-                              <div class="accordion-item-content">
-                                 <div class="content-block">
-                                    <p>C is a general-purpose, procedural, imperative computer programming language developed in 1972 by Dennis M. Ritchie at the Bell Telephone Laboratories to develop the UNIX operating system. C is the most widely used computer language. It keeps fluctuating at number one scale of popularity along with Java programming language, which is also equally popular and most widely used among modern software programmers.</p>
-                                 </div>
-                              </div>
-                           </li>
-                           <li class="accordion-item">
-                              <a href="#" class="item-content item-link">
-                                 <div class="item-inner">
-                                    <div class="item-title">C++</div>
-                                 </div>
-                              </a>
-                              <div class="accordion-item-content">
-                                 <div class="content-block">
-                                    <p>C++ is a middle-level programming language developed by Bjarne Stroustrup starting in 1979 at Bell Labs. C++ runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX.
-                                       This reference will take you through simple and practical approach while learning C++ Programming language.
-                                    </p>
-                                 </div>
-                              </div>
-                           </li>
-                           <li class="accordion-item">
-                              <a href="#" class="item-content item-link">
-                                 <div class="item-inner">
-                                    <div class="item-title">Java</div>
-                                 </div>
-                              </a>
-                              <div class="accordion-item-content">
-                                 <div class="content-block">
-                                    <p>Java is a high-level programming language originally developed by Sun Microsystems and released in 1995. Java runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This tutorial gives a complete understanding of Java.
-                                       This reference will take you through simple and practical approach while learning Java Programming language.
-                                    </p>
-                                 </div>
-                              </div>
-                           </li>
-                        </ul>
-                     </div>
-        
-        
-    </div>
-  </div>
-              
+              <!-- Search Bar -->
+              <center>
+                <h2>Silahkan Cari Suku </h2>
+              </center>
+
+              <form data-search-list=".list-block-search" data-search-in=".item-title" class="searchbar searchbar-init">
+                <div class="searchbar-input">
+                  <input type="search" placeholder="Cari Suku">
+                  <a href="#" class="searchbar-clear"></a>
+                </div><a href="#" class="searchbar-cancel">Batal</a>
+              </form>
+
+              <!-- Search Bar overlay -->
+
+              <div class="page-content">
+                <!-- This block will be displayed if nothing found -->
+                <div class="content-block searchbar-not-found">
+                  <div class="content-block-inner">Suku Tidak Tersedia</div>
+                </div>
+
+                <!-- This block will be displayed if anything found, and this list block is used a searbar target -->
+                <div class="list-block list-block-search searchbar-found inset">
+                  <ul>
+                    <style>
+                      .texthide{
+                      font-size: 0;
+                      }
+                    </style>
+                    <li class="item-divider"><i>Anacardiaceae</i>
+                    </li>
+                    <li>
+
+                      <a href="#" class="item-link item-content" id="list-data1">
+                        <div class="item-media"><i class="icon icon-f7"></i>
+                        </div>
+                        <div class="item-inner">
+                          <div class="item-title"><span class="texthide">Anacardiaceae</span>  <i>Anacardium occidentale</i> L.</div>
+                          <div class="item-after">Lihat</div>
+                        </div>
+                      </a>
+                      <a href="#" class="item-link item-content" id="list-data2">
+                        <div class="item-media"><i class="icon icon-f7"></i>
+                        </div>
+                        <div class="item-inner">
+                          <div class="item-title"><span class="texthide">Anacardiaceae</span>  <i>Lannea coromandelica</i> (Houtt.) Merr.</div>
+                          <div class="item-after">Lihat</div>
+                        </div>
+                      </a>
+                      <a href="#" class="item-link item-content" id="list-data3">
+                        <div class="item-media"><i class="icon icon-f7"></i>
+                        </div>
+                        <div class="item-inner">
+                          <div class="item-title"><span class="texthide">Anacardiaceae</span>  <i>Mangifera indica</i> L.</div>
+                          <div class="item-after">Lihat</div>
+                        </div>
+                      </a>
+                      <a href="#" class="item-link item-content" id="list-data4">
+                        <div class="item-media"><i class="icon icon-f7"></i>
+                        </div>
+                        <div class="item-inner">
+                          <div class="item-title"><span class="texthide">Anacardiaceae</span> S<i>Spondias dulcis</i> G. Forst.</div>
+                          <div class="item-after">Lihat</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="item-divider">Divider title her</li>
+                    <li>
+
+                      <a href="#" class="item-link item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i>
+                        </div>
+                        <div class="item-inner">
+                          <div class="item-title">Item with badge</div>
+                          <div class="item-after"><span class="badge">5</span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="item-link item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i>
+                        </div>
+                        <div class="item-inner">
+                          <div class="item-title">Another item</div>
+                          <div class="item-after">Another label</div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+
+                </div>
               </div>
 
-                    <!-- SEARCH !! -->
-    
-          
             </div>
 
+            <!-- POP OVER SEARCH !! -->
+            <!-- SEARCH !! -->
+
+          </div>
+
         </div>
-          
+      </div>
+      <div class="upage vertical-col left hidden view bg-menu" id="info">
+        <div class="pages">
+
+          <div class="page navbar-fixed">
+            <div class="navbar inner-element uib_w_5 head-main" data-uib="framework7/header" data-ver="0">
+              <div class="navbar-inner">
+                <div class="left">
+                  <div class="widget-container content-area horiz-area wrapping-col"><a class="widget uib_w_6 d-margins link color-white" data-uib="framework7/button" data-ver="0" id="back2"><i class="icon-back icon" data-position="left"></i><span>Back</span></a>
+                  </div>
+                </div>
+                <div class="center labeltext"></div>
+                <div class="right">
+                  <div class="widget-container content-area horiz-area wrapping-col"></div>
+                </div>
+              </div>
+            </div>
+            <div class="page-content upage-content content-area hide-navbar-on-scroll" id="page_33_89"></div>
+          </div>
+
+        </div>
+      </div>
+      <div class="upage vertical-col left hidden view bg-menu" id="petunjuk">
+        <div class="pages">
+
+          <div class="page navbar-fixed">
+            <div class="navbar inner-element uib_w_7 head-main" data-uib="framework7/header" data-ver="0">
+              <div class="navbar-inner">
+                <div class="left">
+                  <div class="widget-container content-area horiz-area wrapping-col"><a class="widget uib_w_8 d-margins link color-white" data-uib="framework7/button" data-ver="0" id="back3"><i class="icon-back icon" data-position="left"></i><span>Back</span></a>
+                  </div>
+                </div>
+                <div class="center labeltext"></div>
+                <div class="right">
+                  <div class="widget-container content-area horiz-area wrapping-col"></div>
+                </div>
+              </div>
+            </div>
+            <div class="page-content upage-content content-area hide-navbar-on-scroll" id="page_3_60">
+
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
     <script type="application/javascript" src="framework7/my-app.js"></script>
