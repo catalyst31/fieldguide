@@ -1,65 +1,73 @@
 <!DOCTYPE html>
 <html>
-    <!--
+  <!--
   * Please see the included README.md file for license terms and conditions.
   -->
 
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="framework7/css/framework7.ios.min.css">
-        <title>Menu</title>
-        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <head>
+    <link rel="stylesheet" type="text/css" href="framework7/css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" type="text/css" href="media_button_bar/css/media_button_bar.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="framework7/css/framework7.ios.min.css" class="uib-framework-theme">
+    <title>Menu</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 
-        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1, maximum-scale=2"> -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1, maximum-scale=2"> -->
 
-        <style>
-            /* following three (cascaded) are equivalent to above three meta viewport statements */
+    <style>
+      /* following three (cascaded) are equivalent to above three meta viewport statements */
             /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html */
             /* see http://dev.w3.org/csswg/css-device-adapt/ */
                 @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
                 @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
                 /*@-ms-viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }   @viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }*/
-        </style>
+    </style>
 
-        <link rel="stylesheet" href="css/app.css">
-        <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
 
-     
-        <script src="cordova.js" id="xdkJScordova_"></script>
+    <script src="cordova.js" id="xdkJScordova_"></script>
 
-        <script src="js/app.js"></script>
-        <!-- for your event code, see README and file comments for details -->
-        <script src="js/init-app.js"></script>
-        <!-- for your init code, see README and file comments for details -->
-        <script src="xdk/init-dev.js"></script>
-        <!-- normalizes device and document ready events, see file for details -->
-        <script type="application/javascript" src="lib/jquery.min.js"></script>
-        <script type="application/javascript" src="framework7/js/framework7.min.js"></script>
-    </head>
+    <script src="js/app.js"></script>
+    <!-- for your event code, see README and file comments for details -->
+    <script src="js/init-app.js"></script>
+    <!-- for your init code, see README and file comments for details -->
+    <script src="xdk/init-dev.js"></script>
+    <!-- normalizes device and document ready events, see file for details -->
+    <script type="application/javascript" src="lib/jquery.min.js"></script>
+    <script type="application/javascript" src="framework7/js/framework7.min.js"></script>
+    <script type="application/javascript" src="js/index_user_scripts.js"></script>
+  </head>
 
-    <body>
-        <div class="uwrap views">
-            <div class="upage view-main view" id="menu">
-                <div class="pages">
-                    <div class="page navbar-fixed">
-                        <div class="navbar inner-element uib_w_1" data-uib="framework7/header" data-ver="0">
-                            <div class="navbar-inner">
-                                <div class="left">
-                                    <div class="widget-container content-area horiz-area wrapping-col"></div>
-                                </div>
-                                <div class="center labeltext">Header</div>
-                                <div class="right">
-                                    <div class="widget-container content-area horiz-area wrapping-col"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="upage-content ac0 content-area vertical-col left page-content" id="page_47_27"></div>
-                    </div>
+  <body>
+    <div class="uwrap views">
+      <div class="upage view-main view bg-menu" id="menu">
+        <div class="pages">
+
+          <div class="page navbar-fixed toolbar-fixed">
+            <div class="navbar inner-element uib_w_1 head-main" data-uib="framework7/header" data-ver="0">
+              <div class="navbar-inner">
+                <div class="left">
+                  <div class="widget-container content-area horiz-area wrapping-col"><a class="widget uib_w_2 d-margins link color-white" data-uib="framework7/button" data-ver="0" id="btnmenu"><span>  </span><i class="icon-form-toggle icon"></i></a>
+                  </div>
                 </div>
+                <div class="center labeltext"></div>
+                <div class="right">
+                  <div class="widget-container content-area horiz-area wrapping-col"></div>
+                </div>
+              </div>
             </div>
+            <div class="upage-content ac0 content-area vertical-col left page-content hide-navbar-on-scroll hide-toolbar-on-scroll" id="page_47_27">
+
+            </div>
+
+          </div>
+
         </div>
-        <script type="application/javascript" src="framework7/my-app.js"></script>
-    </body>
+      </div>
+    </div>
+    <script type="application/javascript" src="framework7/my-app.js"></script>
+  </body>
 
 </html>
