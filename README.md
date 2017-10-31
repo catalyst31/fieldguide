@@ -1,10 +1,9 @@
-Blank HTML App Designer Template for Building Mobile Cordova Web Apps
+Field Guide Trees Kampus UNJ 2017
 =====================================================================
 
 Copyright © 2012-2015, Intel Corporation. All rights reserved.
 
 See [LICENSE.md](<LICENSE.md>) for license terms and conditions.
-
 Use this template as a starting point for an Intel XDK App Designer project that
 will be distributed as a *mobile Cordova web app*. The file named `init-dev.js`
 included as part of this project contains init code that generates an

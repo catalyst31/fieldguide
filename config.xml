@@ -49,7 +49,12 @@
     <preference name="android-signed" value="true"/>
     <preference name="Orientation" value="landscape"/>
     <preference name="AndroidLaunchMode" value="singleTop"/>
+    <preference name="Fullscreen" value="true"/>
 </platform>
+<splash platform="android" src="package-assets/426.png" density="ldpi" width="426" height="320" orientation="landscape"/>
+<splash platform="android" src="package-assets/470.png" density="mdpi" width="470" height="320" orientation="landscape"/>
+<splash platform="android" src="package-assets/640.png" density="hdpi" width="640" height="480" orientation="landscape"/>
+<splash platform="android" src="package-assets/960.png" density="xhdpi" width="960" height="720" orientation="landscape"/>
 <icon platform="android" src="package-assets/36.png" density="ldpi" width="36" height="36"/>
 <icon platform="android" src="package-assets/48.png" density="mdpi" width="48" height="48"/>
 <icon platform="android" src="package-assets/72.png" density="hdpi" width="72" height="72"/>
