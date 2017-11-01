@@ -87,7 +87,20 @@ $$('#btnmenu').on('click', function () {
          activate_page("#menu"); 
          return false;
     });
-    
+/*List Action*/
+     
+/* Data 1 */
+$$('#list-data1').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data1.html");
+    }, 500);
+});
+     
+     
+
+/*List Action*/
     }
  document.addEventListener("app.Ready", register_event_handlers, false);
 })();
