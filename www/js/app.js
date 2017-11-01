@@ -23,3 +23,4 @@
 
 
 // ...additional event handlers here...
+document.addEventListener("intel.xdk.device.orientation.change",orientationchange,false);
