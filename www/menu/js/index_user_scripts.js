@@ -97,6 +97,29 @@ $$('#list-data1').on('click', function () {
         window.open("data/data1.html");
     }, 500);
 });
+
+$$('#list-data2').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data2.html");
+    }, 500);
+});
+     
+$$('#list-data3').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data3.html");
+    }, 500);
+});   
+$$('#list-data4').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data4.html");
+    }, 500);
+});
      
      
 
