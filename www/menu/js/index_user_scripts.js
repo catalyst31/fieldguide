@@ -120,10 +120,49 @@ $$('#list-data4').on('click', function () {
         window.open("data/data4.html");
     }, 500);
 });
+$$('#list-data5').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data5.html");
+    }, 500);
+});
      
      
 
 /*List Action*/
+        /* graphic button  Tunggal */
+    $(document).on("click", ".uib_w_14", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#tunggal"); 
+         return false;
+    });
+    
+        /* button  #back4 */
+    $(document).on("click", "#back4", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#menu"); 
+         return false;
+    });
+    
+        /* graphic button  Tunggal */
+    $(document).on("click", ".uib_w_18", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#tunggal"); 
+         return false;
+    });
+    
+        /* graphic button  #tunggal */
+    $(document).on("click", "#tunggal", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#tunggal"); 
+         return false;
+    });
+    
     }
  document.addEventListener("app.Ready", register_event_handlers, false);
 })();
