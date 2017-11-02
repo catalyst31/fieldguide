@@ -42,7 +42,11 @@ $$('#btnmenu').on('click', function () {
 
         },
         {
-            text: 'Tentang Aplikasi'
+            text: 'Tentang Kami',
+            onClick: function(){
+                activate_page("#about");
+                return false;
+            }
         }
     ];
     var buttons2 = [
@@ -127,6 +131,27 @@ $$('#list-data5').on('click', function () {
         window.open("data/data5.html");
     }, 500);
 });
+$$('#list-data6').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data6.html");
+    }, 500);
+});
+$$('#list-data7').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data7.html");
+    }, 500);
+});
+$$('#list-data8').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data8.html");
+    }, 500);
+});
      
      
 
@@ -155,11 +180,30 @@ $$('#list-data5').on('click', function () {
          return false;
     });
     
+       
         /* graphic button  #tunggal */
-    $(document).on("click", "#tunggal", function(evt)
+    
+        /* graphic button  #btntunggal */
+    $(document).on("click", "#btntunggal", function(evt)
     {
          /*global activate_page */
          activate_page("#tunggal"); 
+         return false;
+    });
+    
+        /* button  Back */
+    $(document).on("click", ".uib_w_22", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#menu"); 
+         return false;
+    });
+    
+        /* button  Back */
+    $(document).on("click", ".uib_w_24", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#menu"); 
          return false;
     });
     
