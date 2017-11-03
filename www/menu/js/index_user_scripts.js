@@ -156,13 +156,6 @@ $$('#list-data8').on('click', function () {
      
 
 /*List Action*/
-        /* graphic button  Tunggal */
-    $(document).on("click", ".uib_w_14", function(evt)
-    {
-         /*global activate_page */
-         activate_page("#tunggal"); 
-         return false;
-    });
     
         /* button  #back4 */
     $(document).on("click", "#back4", function(evt)
@@ -173,12 +166,6 @@ $$('#list-data8').on('click', function () {
     });
     
         /* graphic button  Tunggal */
-    $(document).on("click", ".uib_w_18", function(evt)
-    {
-         /*global activate_page */
-         activate_page("#tunggal"); 
-         return false;
-    });
     
        
         /* graphic button  #tunggal */
@@ -204,6 +191,14 @@ $$('#list-data8').on('click', function () {
     {
          /*global activate_page */
          activate_page("#menu"); 
+         return false;
+    });
+    
+        /* graphic button  #btnmajemuk */
+    $(document).on("click", "#btnmajemuk", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#majemuk"); 
          return false;
     });
     

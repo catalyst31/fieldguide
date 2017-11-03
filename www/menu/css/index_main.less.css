@@ -329,11 +329,6 @@ body#afui .splt {
   }
 }
 @media all {
-  .default-graphic-text {
-    text-align: center;
-  }
-}
-@media all {
   .default-graphic-sizing {
     width: 80%    !important;
     -webkit-flex: 0 0 auto !important;
@@ -857,5 +852,81 @@ label:empty {
 @media all {
   .grid-height {
     height: 80vh;
+  }
+}
+.bgclr {
+  background-image: url('../images/nav/option.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+@media all {
+  .asdw {
+    color: #000000;
+  }
+}
+@media all {
+  .btntunggal {
+    background-color: ;
+  }
+}
+@media all {
+  .txt-tunggal {
+    color: #ffffff;
+    text-align: center;
+  }
+}
+@media all {
+  .btnsize {
+    height: 110%  !important;
+    padding: 10px 35px 10px 10px;
+  }
+}
+.btnnew {
+  font-size: 1px;
+}
+@media all {
+  .img-tgl > img {
+    width: 220%;
+  }
+}
+@media all {
+  .img-tgl2 > img {
+    width: 180%;
+  }
+}
+@media all {
+  .btnsize2 {
+    padding: 5px 5px 5px 55px;
+  }
+}
+.uib_row_1:not(.cright) > .col {
+  padding-right: 20px;
+}
+.uib_row_1.cright > .col {
+  padding-left: 20px;
+}
+@media all {
+  .col-0_12-12 {
+    width: auto;
+    float: none !important;
+  }
+  .urow:not(.cright) > .col-0_12-12 {
+    padding-right: 0px !important;
+  }
+  .urow.cright > .col-0_12-12 {
+    padding-left: 0px !important;
+  }
+}
+@media all {
+  .grid-pad {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media all and (min-width: 0px) {
+  .row-height-1 > .col > .content-area {
+    min-height: 100px;
   }
 }
