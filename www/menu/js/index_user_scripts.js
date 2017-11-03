@@ -152,6 +152,34 @@ $$('#list-data8').on('click', function () {
         window.open("data/data8.html");
     }, 500);
 });
+$$('#list-data9').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data9.html");
+    }, 500);
+});
+$$('#list-data10').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data10.html");
+    }, 500);
+});
+$$('#list-data11').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data11.html");
+    }, 500);
+});
+$$('#list-data12').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data12.html");
+    }, 500);
+});
      
      
 
