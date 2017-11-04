@@ -180,6 +180,41 @@ $$('#list-data12').on('click', function () {
         window.open("data/data12.html");
     }, 500);
 });
+$$('#list-data13').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data13.html");
+    }, 500);
+});
+$$('#list-data14').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data14.html");
+    }, 500);
+});
+$$('#list-data15').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data15.html");
+    }, 500);
+});
+$$('#list-data16').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data16.html");
+    }, 500);
+});
+$$('#list-data17').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data17.html");
+    }, 500);
+});
      
      
 
