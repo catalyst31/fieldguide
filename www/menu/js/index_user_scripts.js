@@ -265,6 +265,201 @@ $$('#list-data17').on('click', function () {
          return false;
     });
     
+        /* graphic button  #pinnate */
+    
+    
+        /* graphic button  #pinnate */
+    $(document).on("click", "#pinnate", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#mjk_pinnate"); 
+         return false;
+    });
+    
+        /* graphic button  #palmate */
+    $(document).on("click", "#palmate", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#mjk_palmate"); 
+         return false;
+    });
+    
+        /* graphic button  #tripinnate */
+    $(document).on("click", "#tripinnate", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#mjk_tripinnate"); 
+         return false;
+    });
+    
+        /* button  #back7 */
+    $(document).on("click", "#back7", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#majemuk"); 
+         return false;
+    });
+    
+        /* button  #back8 */
+    $(document).on("click", "#back8", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#majemuk"); 
+         return false;
+    });
+    
+        /* button  #back9 */
+    $(document).on("click", "#back9", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#majemuk"); 
+         return false;
+    });
+    
+        /* graphic button  #biternate */
+    $(document).on("click", "#biternate", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#mjk_biternate"); 
+         return false;
+    });
+    
+        /* button  #back10 */
+    $(document).on("click", "#back10", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#majemuk"); 
+         return false;
+    });
+    
+        /* graphic button  #tereduksi */
+    $(document).on("click", "#tereduksi", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#mjk_tereduksi"); 
+         return false;
+    });
+    
+        /* button  #back11 */
+    $(document).on("click", "#back11", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#majemuk"); 
+         return false;
+    });
+    
+        /* button  #back12 */
+    $(document).on("click", "#back12", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#majemuk"); 
+         return false;
+    });
+    
+        /* graphic button  #bipinnate */
+    $(document).on("click", "#bipinnate", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#mjk_bipinnate"); 
+         return false;
+    });
+    
+        /* graphic button  #berkarang */
+    $(document).on("click", "#berkarang", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#mjk_berkarang"); 
+         return false;
+    });
+    
+        /* button  #back13 */
+    $(document).on("click", "#back13", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#majemuk"); 
+         return false;
+    });
+    
+        /* button  #back14 */
+    $(document).on("click", "#back14", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#tunggal"); 
+         return false;
+    });
+    
+        /* graphic button  #pdaun */
+    $(document).on("click", "#pdaun", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#tgl_pdaun"); 
+         return false;
+    });
+    
+        /* button  #back15 */
+    $(document).on("click", "#back15", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#tunggal"); 
+         return false;
+    });
+    
+        /* graphic button  #stdaun */
+    $(document).on("click", "#stdaun", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#tgl_stdaun"); 
+         return false;
+    });
+    
+        /* button  #back16 */
+    $(document).on("click", "#back16", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#tunggal"); 
+         return false;
+    });
+    
+        /* graphic button  #udaun */
+    $(document).on("click", "#udaun", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#tgl_udaun"); 
+         return false;
+    });
+    
+        /* button  #back17 */
+    $(document).on("click", "#back17", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#tunggal"); 
+         return false;
+    });
+    
+        /* graphic button  #basdaun */
+    $(document).on("click", "#basdaun", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#tgl_basdaun"); 
+         return false;
+    });
+    
+        /* button  #back18 */
+    $(document).on("click", "#back18", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#tunggal"); 
+         return false;
+    });
+    
+        /* graphic button  #bendaun */
+    $(document).on("click", "#bendaun", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#tgl_bendaun"); 
+         return false;
+    });
+    
     }
  document.addEventListener("app.Ready", register_event_handlers, false);
 })();
