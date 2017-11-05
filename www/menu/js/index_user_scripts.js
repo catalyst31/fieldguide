@@ -58,7 +58,7 @@ $$('#btnmenu').on('click', function () {
             }
         },
         {
-            text: 'Batal',
+            text: '<span style="color:red;">Batal</span>',
             color: 'red'
         }
     ];
@@ -241,6 +241,48 @@ $$('#list-data21').on('click', function () {
     setTimeout(function () {
         myApp.hideIndicator();
         window.open("data/data21.html");
+    }, 500);
+});
+$$('#list-data22').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data22.html");
+    }, 500);
+});
+$$('#list-data23').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data23.html");
+    }, 500);
+});
+$$('#list-data24').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data24.html");
+    }, 500);
+});
+$$('#list-data25').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data25.html");
+    }, 500);
+});
+$$('#list-data26').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data26.html");
+    }, 500);
+});
+$$('#list-data27').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data27.html");
     }, 500);
 });
      
