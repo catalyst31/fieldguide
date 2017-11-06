@@ -340,11 +340,40 @@ $$('#list-data35').on('click', function () {
         myApp.hideIndicator();
         window.open("data/data35.html");
     }, 500);
+});
 $$('#list-data36').on('click', function () {
     myApp.showIndicator();
     setTimeout(function () {
         myApp.hideIndicator();
         window.open("data/data36.html");
+    }, 500);
+});
+$$('#list-data37').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data37.html");
+    }, 500);
+});
+$$('#list-data38').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data38.html");
+    }, 500);
+});
+$$('#list-data39').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data39.html");
+    }, 500);
+});
+$$('#list-data40').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data40.html");
     }, 500);
 });
      
@@ -359,11 +388,6 @@ $$('#list-data36').on('click', function () {
          activate_page("#menu"); 
          return false;
     });
-    
-        /* graphic button  Tunggal */
-    
-       
-        /* graphic button  #tunggal */
     
         /* graphic button  #btntunggal */
     $(document).on("click", "#btntunggal", function(evt)

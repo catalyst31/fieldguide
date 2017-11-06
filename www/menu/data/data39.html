@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+    <!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="icon-fonts/elusive-icons-2.0.0/css/elusive-icons.css">
+        <link rel="stylesheet" type="text/css" href="icon-fonts/font-awesome-4.3.0/css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="media_button_bar/css/media_button_bar.css">
+
+        <script src="js/snap.svg-min.js"></script>
+        <meta charset="UTF-8">
+        <title>Aplikasi</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+        <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css">
+
+        <style>
+            .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { border-width: 0; }
+                .nav-tabs > li > a { border: none; color: #ffffff;background: #099b2b; }
+                .nav-tabs > li.active > a, .nav-tabs > li > a:hover { border: none;  color: #5a4080 !important; background: #fff; }
+                .nav-tabs > li > a::after { content: ""; background: #5a4080; height: 2px; position: absolute; width: 100%; left: 0px; bottom: -1px; transition: all 250ms ease 0s; transform: scale(0); }
+                .nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after { transform: scale(1); }
+                .tab-nav > li > a::after { background: ##5a4080 none repeat scroll 0% 0%; color: #fff; }
+                .tab-pane { padding: 15px 0; }
+                .asd{
+                height:200px;
+                overflow-y:scroll;
+                width:100%;
+                }
+                .tab-content{padding:20px}
+                .nav-tabs > li  {width:20%; text-align:center;}
+                .card {background: #FFF none repeat scroll 0% 0%; box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3); margin-bottom: 30px; }
+                
+                }
+        </style>
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1, maximum-scale=2"> -->
+
+        <style>
+            /* following three (cascaded) are equivalent to above three meta viewport statements */
+            /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html */
+            /* see http://dev.w3.org/csswg/css-device-adapt/ */
+                @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+                @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+                /*@-ms-viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }   @viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }*/
+        </style>
+        <style>
+            * {
+              box-sizing: border-box;
+            }
+            
+            #myInput {
+              background-image: url('/css/searchicon.png');
+              background-position: 10px 12px;
+              background-repeat: no-repeat;
+              width: 100%;
+              font-size: 16px;
+              padding: 12px 20px 12px 40px;
+              border: 1px solid #ddd;
+              margin-bottom: 12px;
+            }
+            
+            #myUL {
+              list-style-type: none;
+              padding: 0;
+              margin: 0;
+            }
+            
+            #myUL li a {
+              border: 1px solid #ddd;
+              margin-top: -1px; /* Prevent double borders */
+              background-color: #f6f6f6;
+              padding: 12px;
+              text-decoration: none;
+              font-size: 18px;
+              color: black;
+              display: block
+            }
+            
+            #myUL li a.header {
+              background-color: #e2e2e2;
+              cursor: default;
+            }
+            
+            #myUL li a:hover:not(.header) {
+              background-color: #eee;
+            }
+        </style>
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+
+        <script src="cordova.js" id="xdkJScordova_"></script>
+
+        <script src="js/app.js"></script>
+        <!-- for your event code, see README and file comments for details -->
+        <script src="js/init-app.js"></script>
+        <!-- for your init code, see README and file comments for details -->
+        <script src="xdk/init-dev.js"></script>
+        <!-- normalizes device and document ready events, see file for details -->
+        <script type="application/javascript" src="lib/jquery.min.js"></script>
+        <script type="application/javascript" src="marginal/marginal-position.min.js"></script>
+        <script type="application/javascript" src="js/index_user_scripts.js"></script>
+        <script type="application/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+        <script type="application/javascript" src="xdk/ad/bs_subpage.js"></script>
+        <script type="application/javascript" src="xdk/appdesigner/js/rest-of-space.js"></script>
+
+    </head>
+
+    <body>
+        <script>
+            function myFunction() {
+                var input, filter, ul, li, a, i;
+                input = document.getElementById("myInput");
+                filter = input.value.toUpperCase();
+                ul = document.getElementById("myUL");
+                li = ul.getElementsByTagName("li");
+                for (i = 0; i < li.length; i++) {
+                    a = li[i].getElementsByTagName("a")[0];
+                    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                        li[i].style.display = "";
+                    } else {
+                        li[i].style.display = "none";
+            
+                    }
+                }
+            }
+        </script>
+
+        <div class="upage main" id="data1">
+            <div class="upage-outer">
+                <div class="uib-header header-bg container-group inner-element uib_w_64" data-uib="layout/header" data-ver="0">
+                    <h2></h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left">
+                        <button class="btn widget uib_w_65 d-margins btn-link" data-uib="twitter%20bootstrap/button" data-ver="1"><i class="glyphicon glyphicon-chevron-left button-icon-left" data-position="left"></i>Back</button>
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+                <div class="upage-content ac0 content-area vertical-col left" id="page_69_1"></div>
+
+            </div>
+            <div class="container">
+                <center>
+                    <img src="img/content/label/label-data39.png" width="70%" height="75%">
+                </center>
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Nav tabs -->
+                        <div class="card">
+                            <ul class="nav nav-tabs" role="tablist">
+
+                                <li role="presentation" class="active"><a href="#desc7" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-info"></i>&nbsp; <span>Deskripsi</span></a>
+                                </li>
+                                <li role="presentation"><a href="#profile7" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-map-marker"></i>&nbsp; <span>Lokasi</span></a>
+                                </li>
+                                <li role="presentation"><a href="#messages7" aria-controls="messages" role="tab" data-toggle="tab"><i class="fa fa-photo"></i>&nbsp; <span>Foto</span></a>
+                                </li>
+
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane asd active" id="desc7">
+                                    <p style="text-align:justify;">
+                                        <b>Akar :</b>
+                                        <br>Banir kecil.
+                                    </p>
+                                    <p style="text-align:justify;">
+                                        <b>Batang :</b>
+                                        <br>bentuk bulat, banyak terdapat lentisel bentuk vertikal, horizontal dan bulat menonjol, permukaan batang kasar, memiliki getah/lateks warna putih, bagian dalam kulit batang warna kuning kehijauan.
+                                    </p>
+                                    <p style="text-align:justify;">
+                                        <b>Ranting :</b>
+                                        <br>bentuk bulat, penuh lentisel; Daun: bentuk ovate, tepi daun lacinate, palmate, menjari, ujung daun runcing, basal daun runcing, permukaan daun licin mengkilap serta terdapat rambut tegak, tangkai daun mengkerut
+                                        bagian atas, terdapat leaf scar (berkas tangkai) bentuk bulat, tekstur daun perkamen seperti kertas.
+
+                                    </p>
+                                    <p style="text-align:justify;">
+                                        <b>Perbungaan :</b>
+                                        <br>terdapat babal dengan ukuran 15 cm dan tangkai 19 cm.
+
+                                    </p>
+                                    <p style="text-align:justify;">
+                                        <b>Diameter pohon :</b>
+                                        <br>37cm.
+                                    </p>
+                                    <p style="text-align:justify;">
+                                        <b>Tinggi pohon :</b>
+                                        <br>12m.
+                                    </p>
+                                    <p style="text-align:justify;">
+                                        <b>Ekologi &amp; Kegunaan :</b>
+                                        <br>Buah sukun mengandung gizi yang cukup tinggi, satu buah sukun dapat dikonsumsi sebagai pengganti beras untuk 3-4 orang. Manfaat lain adalah kayunya untuk bahan konstruksi ringan,&nbsp; papan kayu yang dikilapkan,
+                                        papan seluncur/kano, kotak/peti, mebel, mainan dan bahan baku pulp. Daunnya juga diyakini berkhasiat sebagai obat tradisional untuk mengatasi gangguan pada ginjal dan jantung menurunkan tekanan darah, mengatasi
+                                        penyakit asma, infeksi kulit, sakit gigi dan diare.
+                                    </p>
+                                    <p style="text-align:justify;">
+                                        <b>Penyebaran  :</b>
+                                        <br>Penyebaran sukun&nbsp; di Indonesia meliputi Sumatera (Aceh, Sumatera Utara, Sumatera Barat, Riau, Nias, Lampung), Pulau Jawa (Kepulauan Seribu, Jawa Barat, Jawa Tengah, Yogyakarta, Jawa Timur, Madura), Bali, Nusa
+                                        Tenggara Barat, Nusa Tenggara Timur, Sulawesi, Maluku dan Papua.
+                                    </p>
+                                    <p style="text-align:justify;">
+                                        <b>Klasifikasi</b>
+                                        <br>Kingdom : Plantae
+                                        <br>Divisi : Magnoliophyta
+                                        <br>Kelas : Equisetopsida
+                                        <br>Ordo : Rosales
+                                        <br>Famili : Moraceae
+                                        <br>Genus : <i>Artocarpus</i>
+                                        <br>Spesies : <i>Artocarpus altilis</i> (Parkinson) Fosberg
+                                        <br>
+                                        <br>
+                                        <br><i>(sumber: tropicos.com)</i>
+                                    </p>
+                                </div>
+                                 <div role="tabpanel" class="tab-pane" id="profile7">
+                                    
+                                    <center>
+                                    <h3>Lokasi Kampus A & B</h3>
+                                    <br>
+                                    <iframe src="kampusAB.html" width="580px" height="420px"></iframe>
+                                    </center>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="messages7">
+                                    <div id="carousel-example7" class="carousel slide" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example7" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example7" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example7" data-slide-to="2"></li>
+                                            <li data-target="#carousel-example7" data-slide-to="3"></li>
+                                            <li data-target="#carousel-example7" data-slide-to="4"></li>
+                                            <li data-target="#carousel-example7" data-slide-to="5"></li>
+                                            <li data-target="#carousel-example7" data-slide-to="6"></li>
+                                            <li data-target="#carousel-example7" data-slide-to="7"></li>
+                                            <li data-target="#carousel-example7" data-slide-to="8"></li>
+                                            <li data-target="#carousel-example7" data-slide-to="9"></li>
+                                        </ol>
+
+                                        <div class="carousel-inner">
+                                            <div class="item active">
+                                                <a href="#">
+                                                    <img src="img/content/data39/0.jpg" width="100%">
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <img src="img/content/data39/1.jpg" width="100%">
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <img src="img/content/data39/2.jpg" width="100%">
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <img src="img/content/data39/3.jpg" width="100%">
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <img src="img/content/data39/4.jpg" width="100%">
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <img src="img/content/data39/5.jpg" width="100%">
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <img src="img/content/data39/6.jpg" width="100%">
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <img src="img/content/data39/7.jpg" width="100%">
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <img src="img/content/data39/8.jpg" width="100%">
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <img src="img/content/data39/9.jpg" width="100%">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <a class="left carousel-control" href="#carousel-example7" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left"></span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example7" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right"></span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+
+    </body>
+
+</html>
