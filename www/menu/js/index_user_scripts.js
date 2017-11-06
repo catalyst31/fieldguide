@@ -285,6 +285,68 @@ $$('#list-data27').on('click', function () {
         window.open("data/data27.html");
     }, 500);
 });
+$$('#list-data28').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data28.html");
+    }, 500);
+});
+$$('#list-data29').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data29.html");
+    }, 500);
+});
+$$('#list-data30').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data30.html");
+    }, 500);
+});
+$$('#list-data31').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data31.html");
+    }, 500);
+});
+$$('#list-data32').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data32.html");
+    }, 500);
+});
+$$('#list-data33').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data33.html");
+    }, 500);
+});
+$$('#list-data34').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data34.html");
+    }, 500);
+});
+$$('#list-data35').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data35.html");
+    }, 500);
+$$('#list-data36').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data36.html");
+    }, 500);
+});
      
      
 
