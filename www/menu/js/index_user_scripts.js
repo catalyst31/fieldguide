@@ -376,6 +376,48 @@ $$('#list-data40').on('click', function () {
         window.open("data/data40.html");
     }, 500);
 });
+$$('#list-data41').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data41.html");
+    }, 500);
+});
+$$('#list-data42').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data42.html");
+    }, 500);
+});
+$$('#list-data43').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data43.html");
+    }, 500);
+});
+$$('#list-data44').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data44.html");
+    }, 500);
+});
+$$('#list-data45').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data45.html");
+    }, 500);
+});
+$$('#list-data46').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data46.html");
+    }, 500);
+});
      
      
 
