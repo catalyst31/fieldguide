@@ -418,6 +418,35 @@ $$('#list-data46').on('click', function () {
         window.open("data/data46.html");
     }, 500);
 });
+$$('#list-data47').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data47.html");
+    }, 500);
+});
+$$('#list-data48').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data48.html");
+    }, 500);
+});
+$$('#list-data49').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data49.html");
+    }, 500);
+});
+     
+$$('#list-data50').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data50.html");
+    }, 500);
+});
      
      
 
