@@ -246,7 +246,7 @@ $$('#list-data19').on('click', function () {
     }, 500);
 });
      
-$$('#list-data20').on('click', function () {
+$('#list-data20').on('click', function () {
     myApp.showIndicator();
     setTimeout(function () {
         myApp.hideIndicator();
@@ -563,6 +563,70 @@ $$('#list-data59').on('click', function () {
     setTimeout(function () {
         myApp.hideIndicator();
         window.open("data/data59.html");
+    }, 500);
+});
+     
+$$('#list-data60').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data60.html");
+    }, 500);
+});
+     
+$$('#list-data61').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data61.html");
+    }, 500);
+});
+     
+$$('#list-data62').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data62.html");
+    }, 500);
+});
+     
+$$('#list-data63').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data63.html");
+    }, 500);
+});
+     
+$$('#list-data64').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data64.html");
+    }, 500);
+});
+     
+$$('#list-data65').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data65.html");
+    }, 500);
+});
+     
+$$('#list-data66').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data66.html");
+    }, 500);
+});
+     
+$$('#list-data67').on('click', function () {
+    myApp.showIndicator();
+    setTimeout(function () {
+        myApp.hideIndicator();
+        window.open("data/data67.html");
     }, 500);
 });
      
