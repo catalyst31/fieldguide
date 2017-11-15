@@ -872,3 +872,33 @@ $$('#list-data67').on('click', function () {
     }
  document.addEventListener("app.Ready", register_event_handlers, false);
 })();
+
+document.addEventListener("backbutton",function(e){
+        
+         if($("#menu").is(":visible")){
+             e.preventDefault();
+            
+          
+var modal = myApp.modal({
+    title: '<center>Konfirmasi Keluar</center>',
+    text: '<center>Apakah Anda Yakin ?</center>',
+    afterText:  '<center><img src="images/exit.gif" width="100%" height="150" style="display:block"></center>',
+    buttons: [
+      {
+        text: 'Tidak'
+      },
+      {
+        text: 'Ya !',
+        bold: true,
+        onClick: function () {
+          navigator.app.exitApp();
+        }
+      },
+    ]
+  });   
+             
+             
+             
+         }
+        
+     },false);
