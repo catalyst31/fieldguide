@@ -869,6 +869,32 @@ $$('#list-data67').on('click', function () {
          return false;
     });
     
+        /* graphic button  #btn-menyirip */
+    
+    
+        /* graphic button  #btn-menyirip */
+    $(document).on("click", "#btn-menyirip", function(evt)
+    {
+        /* your code goes here */ 
+         return false;
+    });
+    
+        /* button  #back19 */
+    $(document).on("click", "#back19", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#tgl_stdaun"); 
+         return false;
+    });
+    
+        /* graphic button  #btn-menjari */
+    $(document).on("click", "#btn-menjari", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#pstd_menjari"); 
+         return false;
+    });
+    
     }
  document.addEventListener("app.Ready", register_event_handlers, false);
 })();
@@ -882,7 +908,7 @@ document.addEventListener("backbutton",function(e){
 var modal = myApp.modal({
     title: '<center>Konfirmasi Keluar</center>',
     text: '<center>Apakah Anda Yakin ?</center>',
-    afterText:  '<center><img src="images/exit.gif" width="100%" height="150" style="display:block"></center>',
+    afterText:  '<center><img src="../../images/exit.gif" width="100%" height="150" style="display:block"></center>',
     buttons: [
       {
         text: 'Tidak'
