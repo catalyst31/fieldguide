@@ -915,7 +915,7 @@ $('#btn-melengkung').on('click', function () {
   var modal = myApp.modal({
     title: '<center>Pemberitahuan</center>',
     text: '<center>Maaf, sementara belum Ada Pohon dengan Jenis tersebut</center>',
-    afterText:  '<center><img src="../../images/warn.gif" width="100%" height="150" style="display:block"></center>',
+    afterText:  '<center><img src="images/warn.gif" width="100%" height="150" style="display:block"></center>',
     buttons: [
       {
         text: 'Kembali'
@@ -930,7 +930,7 @@ $('#btn-sejajar').on('click', function () {
   var modal = myApp.modal({
     title: '<center>Pemberitahuan</center>',
     text: '<center>Maaf, sementara belum Ada Pohon dengan Jenis tersebut</center>',
-    afterText:  '<center><img src="../../images/warn.gif" width="100%" height="150" style="display:block"></center>',
+    afterText:  '<center><img src="images/warn.gif" width="100%" height="150" style="display:block"></center>',
     buttons: [
       {
         text: 'Kembali'
