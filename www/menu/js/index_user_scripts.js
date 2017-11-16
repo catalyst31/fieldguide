@@ -895,36 +895,54 @@ $$('#list-data67').on('click', function () {
          return false;
     });
     
+        /* button  #back20 */
+    $(document).on("click", "#back20", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#tgl_stdaun"); 
+         return false;
+    });
+    
+        /* graphic button  #btn-menyirip */
+    $(document).on("click", "#btn-menyirip", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#pstd_menyirip"); 
+         return false;
+    });
+     
+$('#btn-melengkung').on('click', function () {
+  var modal = myApp.modal({
+    title: '<center>Pemberitahuan</center>',
+    text: '<center>Maaf, sementara belum Ada Pohon dengan Jenis tersebut</center>',
+    afterText:  '<center><img src="../../images/warn.gif" width="100%" height="150" style="display:block"></center>',
+    buttons: [
+      {
+        text: 'Kembali'
+      }
+      
+    ]
+  });
+});    
+     
+         
+$('#btn-sejajar').on('click', function () {
+  var modal = myApp.modal({
+    title: '<center>Pemberitahuan</center>',
+    text: '<center>Maaf, sementara belum Ada Pohon dengan Jenis tersebut</center>',
+    afterText:  '<center><img src="../../images/warn.gif" width="100%" height="150" style="display:block"></center>',
+    buttons: [
+      {
+        text: 'Kembali'
+      }
+      
+    ]
+  });
+});    
+     
+     
+     
+    
     }
  document.addEventListener("app.Ready", register_event_handlers, false);
 })();
-
-document.addEventListener("backbutton",function(e){
-        
-         if($("#menu").is(":visible")){
-             e.preventDefault();
-            
-          
-var modal = myApp.modal({
-    title: '<center>Konfirmasi Keluar</center>',
-    text: '<center>Apakah Anda Yakin ?</center>',
-    afterText:  '<center><img src="../../images/exit.gif" width="100%" height="150" style="display:block"></center>',
-    buttons: [
-      {
-        text: 'Tidak'
-      },
-      {
-        text: 'Ya !',
-        bold: true,
-        onClick: function () {
-          navigator.app.exitApp();
-        }
-      },
-    ]
-  });   
-             
-             
-             
-         }
-        
-     },false);

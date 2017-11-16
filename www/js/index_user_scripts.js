@@ -13,7 +13,7 @@
      
 $('#in').on('click', function () {
    
-    myApp.showPreloader('Tunggu Sebentar ...');
+    myApp.showPreloader('Memuat Data . . .');
     setTimeout(function () {
         myApp.hidePreloader();
         window.open("menu/index.html");
