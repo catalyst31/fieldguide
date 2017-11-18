@@ -1153,6 +1153,161 @@ $('#btn-gundul').on('click', function () {
          return false;
     });
     
+        /* graphic button  #btn-benlanset */
+    $(document).on("click", "#btn-benlanset", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#pbend_lanset"); 
+         return false;
+    });
+    
+        /* button  Back */
+    $(document).on("click", ".uib_w_127", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#tgl_bendaun"); 
+         return false;
+    });
+    
+        /* graphic button  #btn-bensegitiga */
+    $(document).on("click", "#btn-bensegitiga", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#pbend_segitiga"); 
+         return false;
+    });
+    
+        /* button  #back32 */
+    $(document).on("click", "#back32", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#tgl_bendaun"); 
+         return false;
+    });
+    
+        /* button  #back33 */
+    
+    
+        /* button  #back33 */
+    $(document).on("click", "#back33", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#tgl_bendaun"); 
+         return false;
+    });
+    
+        /* graphic button  #btn-benellips */
+    $(document).on("click", "#btn-benellips", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#pbend_ellips"); 
+         return false;
+    });
+    
+        /* button  #back34 */
+    $(document).on("click", "#back34", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#tgl_bendaun"); 
+         return false;
+    });
+    
+        /* graphic button  #btn-benlsungsang */
+    $(document).on("click", "#btn-benlsungsang", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#pbend_lsungsang"); 
+         return false;
+    });
+    
+        /* button  #back35 */
+    $(document).on("click", "#back35", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#tgl_bendaun"); 
+         return false;
+    });
+    
+        /* button  Back */
+    $(document).on("click", ".uib_w_137", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#tgl_bendaun"); 
+         return false;
+    });
+    
+        /* graphic button  #btn-bentsungsang */
+    $(document).on("click", "#btn-bentsungsang", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#pbend_tsungsang"); 
+         return false;
+    });
+    
+        /* graphic button  #btn-benpandurata */
+    $(document).on("click", "#btn-benpandurata", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#pbend_pandurata"); 
+         return false;
+    });
+    
+        /* button  #back37 */
+    $(document).on("click", "#back37", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#tgl_bendaun"); 
+         return false;
+    });
+    
+        /* graphic button  #btn-benbtelur */
+    $(document).on("click", "#btn-benbtelur", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#pbend_btelur"); 
+         return false;
+    });
+    
+        /* graphic button  #btn-benoval */
+    $(document).on("click", "#btn-benoval", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#pbend_oval"); 
+         return false;
+    });
+    
+        /* button  Back */
+    $(document).on("click", ".uib_w_141", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#tgl_bendaun"); 
+         return false;
+    });
+    
+        /* button  #back39 */
+    $(document).on("click", "#back39", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#tgl_bendaun"); 
+         return false;
+    });
+    
+        /* graphic button  #btn-benlonjong */
+    $(document).on("click", "#btn-benlonjong", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#pbend_lonjong"); 
+         return false;
+    });
+    
+        /* graphic button  #btn-benbhati */
+    $(document).on("click", "#btn-benbhati", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#pbend_bhati"); 
+         return false;
+    });
+    
     }
  document.addEventListener("app.Ready", register_event_handlers, false);
 })();
