@@ -939,9 +939,219 @@ $('#btn-sejajar').on('click', function () {
     ]
   });
 });    
+             
+$('#btn-membulat').on('click', function () {
+  var modal = myApp.modal({
+    title: '<center>Pemberitahuan</center>',
+    text: '<center>Maaf, sementara belum Ada Pohon dengan Jenis tersebut</center>',
+    afterText:  '<center><img src="images/warn.gif" width="100%" height="150" style="display:block"></center>',
+    buttons: [
+      {
+        text: 'Kembali'
+      }
+      
+    ]
+  });
+});    
+        
+             
+$('#btn-rompang').on('click', function () {
+  var modal = myApp.modal({
+    title: '<center>Pemberitahuan</center>',
+    text: '<center>Maaf, sementara belum Ada Pohon dengan Jenis tersebut</center>',
+    afterText:  '<center><img src="images/warn.gif" width="100%" height="150" style="display:block"></center>',
+    buttons: [
+      {
+        text: 'Kembali'
+      }
+      
+    ]
+  });
+});    
+        
+             
+$('#btn-gundul').on('click', function () {
+  var modal = myApp.modal({
+    title: '<center>Pemberitahuan</center>',
+    text: '<center>Maaf, sementara belum Ada Pohon dengan Jenis tersebut</center>',
+    afterText:  '<center><img src="images/warn.gif" width="100%" height="150" style="display:block"></center>',
+    buttons: [
+      {
+        text: 'Kembali'
+      }
+      
+    ]
+  });
+});    
      
      
      
+    
+        /* graphic button  #btn-meruncing */
+    $(document).on("click", "#btn-meruncing", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#pud_meruncing"); 
+         return false;
+    });
+    
+        /* button  #back21 */
+    $(document).on("click", "#back21", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#tgl_udaun"); 
+         return false;
+    });
+    
+        /* button  #back22 */
+    $(document).on("click", "#back22", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#tgl_udaun"); 
+         return false;
+    });
+    
+        /* graphic button  #btn-tumpul */
+    $(document).on("click", "#btn-tumpul", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#pud_tumpul"); 
+         return false;
+    });
+    
+        /* graphic button  #btn-runcing */
+    $(document).on("click", "#btn-runcing", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#pud_runcing"); 
+         return false;
+    });
+    
+        /* button  #back23 */
+    $(document).on("click", "#back23", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#tgl_udaun"); 
+         return false;
+    });
+    
+        /* graphic button  #btn-berkerut */
+    $(document).on("click", "#btn-berkerut", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#ppd_berkerut"); 
+         return false;
+    });
+    
+        /* button  Back */
+    $(document).on("click", ".uib_w_113", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#tgl_pdaun"); 
+         return false;
+    });
+    
+        /* graphic button  #btn-kasap */
+    $(document).on("click", "#btn-kasap", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#ppd_kasap"); 
+         return false;
+    });
+    
+        /* button  #back25 */
+    $(document).on("click", "#back25", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#tgl_pdaun"); 
+         return false;
+    });
+    
+        /* graphic button  #btn-licins */
+    $(document).on("click", "#btn-licins", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#ppd_licins"); 
+         return false;
+    });
+    
+        /* button  #back26 */
+    
+    
+        /* button  #back26 */
+    
+    
+        /* button  #back26 */
+    $(document).on("click", "#back26", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#tgl_pdaun"); 
+         return false;
+    });
+    
+        /* button  #back27 */
+    $(document).on("click", "#back27", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#tgl_pdaun"); 
+         return false;
+    });
+    
+        /* graphic button  #btn-bkasar */
+    $(document).on("click", "#btn-bkasar", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#ppd_bkasar"); 
+         return false;
+    });
+    
+        /* button  Back */
+    $(document).on("click", ".uib_w_121", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#tgl_pdaun"); 
+         return false;
+    });
+    
+        /* graphic button  #btn-blilin */
+    $(document).on("click", "#btn-blilin", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#ppd_blilin"); 
+         return false;
+    });
+    
+        /* button  #back29 */
+    $(document).on("click", "#back29", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#tgl_pdaun"); 
+         return false;
+    });
+    
+        /* graphic button  #btn-bhalus */
+    $(document).on("click", "#btn-bhalus", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#ppd_bhalus"); 
+         return false;
+    });
+    
+        /* graphic button  #btn-licinm */
+    $(document).on("click", "#btn-licinm", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#ppd_licinm"); 
+         return false;
+    });
+    
+        /* button  #back30 */
+    $(document).on("click", "#back30", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#tgl_pdaun"); 
+         return false;
+    });
     
     }
  document.addEventListener("app.Ready", register_event_handlers, false);
