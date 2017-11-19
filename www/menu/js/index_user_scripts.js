@@ -982,6 +982,21 @@ $('#btn-gundul').on('click', function () {
       
     ]
   });
+});     
+        
+             
+$('#btn-basrompang').on('click', function () {
+  var modal = myApp.modal({
+    title: '<center>Pemberitahuan</center>',
+    text: '<center>Maaf, sementara belum Ada Pohon dengan Jenis tersebut</center>',
+    afterText:  '<center><img src="images/warn.gif" width="100%" height="150" style="display:block"></center>',
+    buttons: [
+      {
+        text: 'Kembali'
+      }
+      
+    ]
+  });
 });    
      
      
@@ -1305,6 +1320,104 @@ $('#btn-gundul').on('click', function () {
     {
          /*global activate_page */
          activate_page("#pbend_bhati"); 
+         return false;
+    });
+    
+        /* button  #back40 */
+    $(document).on("click", "#back40", function(evt)
+    {
+        activate_page("#tgl_bendaun"); 
+         return false;
+    });
+     
+     /* button  #back41 */
+    $(document).on("click", "#Back41", function(evt)
+    {
+        activate_page("#tgl_bendaun"); 
+         return false;
+    });
+    
+        /* graphic button  #btn-benhterbralik */
+    $(document).on("click", "#btn-benhterbralik", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#pbend_hterbalik"); 
+         return false;
+    });
+    
+        /* graphic button  #btn-basmeruncing */
+    $(document).on("click", "#btn-basmeruncing", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#pbasd_meruncing"); 
+         return false;
+    });
+     
+     
+     /* button  #back42 */
+    $(document).on("click", "#back42", function(evt)
+    {
+        activate_page("#tgl_basdaun"); 
+         return false;
+    });
+     
+     /* button  #back43 */
+    $(document).on("click", "#back43", function(evt)
+    {
+        activate_page("#tgl_basdaun"); 
+         return false;
+    });
+     
+     /* button  #back44 */
+    $(document).on("click", "#back44", function(evt)
+    {
+        activate_page("#tgl_basdaun"); 
+         return false;
+    });
+     
+     /* button  #back45 */
+    $(document).on("click", "#back45", function(evt)
+    {
+        activate_page("#tgl_basdaun"); 
+         return false;
+    });
+     
+     /* button  #back46 */
+    $(document).on("click", "#back46", function(evt)
+    {
+        activate_page("#tgl_basdaun"); 
+         return false;
+    });
+    
+        /* graphic button  #btn-basmembulat */
+    $(document).on("click", "#btn-basmembulat", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#pbasd_membulat"); 
+         return false;
+    });
+    
+        /* graphic button  #btn-basberlekuk */
+    $(document).on("click", "#btn-basberlekuk", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#pbasd_berlekuk"); 
+         return false;
+    });
+    
+        /* graphic button  #btn-basruncing */
+    $(document).on("click", "#btn-basruncing", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#pbasd_runcing"); 
+         return false;
+    });
+    
+        /* graphic button  #btn-bastumpul */
+    $(document).on("click", "#btn-bastumpul", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#pbasd_tumpul"); 
          return false;
     });
     
