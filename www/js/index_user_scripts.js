@@ -13,12 +13,30 @@
      
 $('#in').on('click', function () {
    
-    myApp.showPreloader('Memuat Data . . .');
-    setTimeout(function () {
-        myApp.hidePreloader();
-        window.open("menu/index.html");
-    }, 800);
-   
+var modal = myApp.modal({
+    title: 'Awesome Photos?',
+    text: 'What do you think about my photos?What do you think about my photos?What do you think about my photos?',
+    afterText:  '<div class="swiper-container" style="width: auto; margin:5px -15px -15px">'+
+                  '<div class="swiper-pagination"></div>'+
+                  '<div class="swiper-wrapper">'+
+                    '<div class="swiper-slide"><img src="images/exit.gif" width="100%" height="150" style="display:block"></div>' +
+                    '<div class="swiper-slide"><img src="images/exit.gif" width="100%" height="150" style="display:block"></div>'+
+                  '</div>'+
+                '</div>',
+    buttons: [
+      {
+        text: 'Bad :('
+      },
+      {
+        text: 'Awesome!',
+        bold: true,
+        onClick: function () {
+          myApp.alert('Thanks! I know you like it!')
+        }
+      },
+    ]
+  })
+  myApp.swiper($$(modal).find('.swiper-container'), {pagination: '.swiper-pagination'});
 });    
      
      
