@@ -34,6 +34,13 @@ $$('#btnmenu').on('click', function () {
             }
         },
         {
+            text: 'Tahukah Kamu',
+            onClick: function () {
+                activate_page("#clue");
+            return false;
+            }
+        },
+        {
             text: 'Petunjuk Aplikasi',
             onClick: function(){
                 activate_page("#petunjuk");
@@ -1418,6 +1425,14 @@ $('#btn-basrompang').on('click', function () {
     {
          /*global activate_page */
          activate_page("#pbasd_tumpul"); 
+         return false;
+    });
+    
+        /* button  Back */
+    $(document).on("click", ".uib_w_159", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#menu"); 
          return false;
     });
     

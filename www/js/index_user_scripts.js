@@ -12,32 +12,27 @@
 /*Open Menu */
      
 $('#in').on('click', function () {
-   
-var modal = myApp.modal({
-    title: 'Awesome Photos?',
-    text: 'What do you think about my photos?What do you think about my photos?What do you think about my photos?',
-    afterText:  '<div class="swiper-container" style="width: auto; margin:5px -15px -15px">'+
-                  '<div class="swiper-pagination"></div>'+
-                  '<div class="swiper-wrapper">'+
-                    '<div class="swiper-slide"><img src="images/exit.gif" width="100%" height="150" style="display:block"></div>' +
-                    '<div class="swiper-slide"><img src="images/exit.gif" width="100%" height="150" style="display:block"></div>'+
-                  '</div>'+
-                '</div>',
+  var modal = myApp.modal({
+    title: '<center>Informasi</center>',
+    text: '<center>Apakah ingin melihat panduan terlebih dahulu ?</center>',
+    afterText:  '<center><img src="images/in.gif" width="100%" height="150" style="display:block"></center>',
     buttons: [
       {
-        text: 'Bad :('
+        text: 'Tidak',
+          onClick: function () {
+          window.open("menu/index.html");
+        }
       },
       {
-        text: 'Awesome!',
+        text: 'Ya',
         bold: true,
         onClick: function () {
-          myApp.alert('Thanks! I know you like it!')
+          activate_page("#info");
         }
       },
     ]
-  })
-  myApp.swiper($$(modal).find('.swiper-container'), {pagination: '.swiper-pagination'});
-});    
+  });
+});
      
      
      
@@ -67,12 +62,7 @@ $('#exit').on('click', function () {
     
 
         /* graphic button  #location */
-    $(document).on("click", "#location", function(evt)
-    {
-         /*global activate_page */
-         activate_page("#lokasi"); 
-         return false;
-    });
+    
     
         /* tab  Kampus A - UNJ */
     
@@ -92,6 +82,29 @@ $('#exit').on('click', function () {
          return false;
     });
     
+        /* graphic button  #location */
+    
+    
+        /* graphic button  #location */
+    
+    
+        /* button  Back */
+    
+    
+        /* button  Back */
+    $(document).on("click", ".uib_w_9", function(evt)
+    {
+window.open("menu/index.html");
+    });
+    
+        /* graphic button  #location */
+    $(document).on("click", "#location", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#lokasi"); 
+         return false;
+    });
+
     }
  document.addEventListener("app.Ready", register_event_handlers, false);
 })();
