@@ -64,15 +64,7 @@ $('#exit').on('click', function () {
         /* graphic button  #location */
     
     
-        /* tab  Kampus A - UNJ */
-    
-        /* button  Button */
-    $(document).on("click", ".uib_w_8", function(evt)
-    {
-         /*global activate_page */
-         activate_page("#mainpage"); 
-         return false;
-    });
+     
     
         /* button  Back */
     $(document).on("click", ".uib_w_7", function(evt)
