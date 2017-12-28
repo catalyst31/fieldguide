@@ -27,27 +27,13 @@ $$('#btnmenu').on('click', function () {
             }
         },
         {
-            text: 'Informasi',
-            onClick: function () {
-                activate_page("#info");
-            return false;
-            }
-        },
-        {
             text: 'Tahukah Kamu',
             onClick: function () {
                 activate_page("#clue");
             return false;
             }
         },
-        {
-            text: 'Petunjuk Aplikasi',
-            onClick: function(){
-                activate_page("#petunjuk");
-                return false;
-            }
-
-        },
+        
         {
             text: 'Tentang Kami',
             onClick: function(){
