@@ -1,7 +1,9 @@
-Field Guide Trees Kampus UNJ 2017
+Field Guide Trees Kampus UNJ 2017 Last Version
 =====================================================================
 
-Copyright © 2012-2015, Intel Corporation. All rights reserved.
+**Made By : A.C.A**
+
+Copyright © 2012-2018, Intel Corporation. All rights reserved.
 
 See [LICENSE.md](<LICENSE.md>) for license terms and conditions.
 Use this template as a starting point for an Intel XDK App Designer project that
